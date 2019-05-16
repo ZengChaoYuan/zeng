@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热卖产品</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script  src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script  src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css"> /**/
+
+
+    /*首页*/
+    .h3{
+        width: 100%;
+        height: 80px;
+    }
+    .h3l{
+        width: 5%;
+        text-align: center;
+        height: 80px;
+        line-height: 80px;
+        float: left;
+
+    }
+    .h3ltu{
+        margin-top:16px;
+    }
+    .h3m{
+        width: 90%;
+        height: 80px;
+        line-height:80px;
+        float: left;
+        font-size: 28px;
+
+    }
+    .h3r{
+        width: 5%;
+        height: 80px;
+        line-height: 80px;
+        float: left;
+    }
+
+    /*首页头部*/
+
+    .cheadsan{
+        width: 100%;
+        height: 100px;
+    }
+
+    .chsl{
+        width:10%;
+        text-align: center;
+        float: left;
+        height: 100px;
+    }
+    .chsm{
+        width:80%;
+        text-align: center;
+        float: left;
+        height: 100px;
+        line-height: 100px;
+        font-size: 48px;
+
+    }
+    .chsr{
+        width:10%;
+        text-align: center;
+        float: left;
+        height: 100px;
+    }
+    .chsrtu{
+        margin-top: 18px;
+    }
+    .cm{
+        width: 100%;
+        margin-top: 30px;
+        height: 120px;
+    }
+    .sf{
+
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        background-color: #333;
+        color: white;
+        font-size: 20px;
+    }
+    .fnav{
+        width: 100%;
+        text-align: center;
+        height: 55px;
+        line-height: 55px;
+        color: white;
+        font-size: 24px;
+    }
+
+
+    </style>
+</head>
+<body>
+<!--第五页-->
+<div data-role="page">
+
+    <div data-role="header">
+
+        <div class="h3">
+            <div class="h3l"><img class="h3ltu" src="image/dacha.png"></div>
+            <div class="h3m">热卖产品-森力净化商城有限公司</div>
+            <div class="h3r"><img class="h3ltu" src="image/shenglvehao.png"></div>
+        </div>
+    </div>
+    <div data-role="content">
+
+        <!--内容头部-->
+        <div class="cheadsan">
+
+            <div class="chsl">
+
+                <a> <img src="image/森力logo.jpg" width="115" height="100"></a>
+            </div>
+            <div class="chsm">
+
+                <b>江苏森力净化商城有限公司</b>
+            </div>
+            <div class="chsr">
+
+                <img class="chsrtu" src="image/gengduo.png">
+            </div>
+
+        </div>
+        <!--内容菜单-->
+        <div class="cm">
+            <div class="ui-grid-b">
+
+                <div class="ui-block-a">
+                    <!--第二列-->
+                    <input type="button" value="森力首页" data-icon="home" data-iconpos="left"onclick="shouye()" >
+                </div>
+                <div class="ui-block-b">
+                    <!--第二列-->
+                    <input type="button" value="联系我们" data-icon="arrow-r" data-iconpos="left"onclick="threePage()" >
+                </div>
+            </div>
+
+            <!--搜索框-->
+            <input data-type="search" placeholder="请输入查找的商品">
+
+        </div>
+
+
+    </div>
+
+    <!--热卖产品内容-->
+    <div class="ui-grid-a">
+        <div class="ui-block-a" title="点击查看高清大图">
+            <!--第一列-->
+
+            <a  href="#xiaotuyi" data-rel="popup"  class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/1.jpg" width="300"height="300"></p>
+                <p>家用净化器</p>
+                <p><b>快速祛霾</b>&emsp;大户型通用&emsp;高性价比优选</p>
+                <p><b>焕新价</b>&emsp;￥1499-2698</p>
+
+            </a>
+
+            <div data-role="popup" id="xiaotuyi">
+                <img src="image/1.jpg" width="600" height="600">
+            </div>
+
+
+        </div>
+        <div class="ui-block-b" title="点击查看高清大图">
+            <!--第二列-->
+
+            <a href="#xiaotuer" data-rel="popup" class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/2.jpg" width="300"height="300" ></p>
+                <p>车用净化器</p>
+                <p><b>高质量空气净化器引领者</b>&emsp;经典之作&emsp;口碑之选</p>
+                <p><b>该商品最高可享三期分期免息</b>&emsp;￥6288</p>
+
+            </a>
+            <div data-role="popup" id="xiaotuer">
+                <img src="image/2.jpg" width="600" height="600">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="ui-grid-a">
+        <div class="ui-block-a" title="点击查看高清大图">
+            <!--第一列-->
+
+            <a href="#xiaotusan" data-rel="popup" class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/5.jpg" width="300"height="300"></p>
+                <p>商用净化器</p>
+                <p><b>智能高配&emsp;除霾除醛</b></p>
+                <p><b>该商品最高可享12期分期免息</b>&emsp;￥6999&emsp;心动价</p>
+
+            </a>
+            <div data-role="popup" id="xiaotusan">
+                <img src="image/5.jpg" width="600" height="600">
+            </div>
+
+
+        </div>
+        <div class="ui-block-b"title="点击查看高清大图">
+            <!--第二列-->
+
+            <a  href="#xiaotusi" data-rel="popup" class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/5.png"width="300"height="300"></p>
+                <p>家用净化器</p>
+                <p><b>高质量空气净化器引领者</b>&emsp;豪华智能&emsp;高效净化</p>
+                <p><b>该商品最高可享6期分期免息</b>&emsp;￥5688 品牌促进</p>
+
+            </a>
+            <div data-role="popup" id="xiaotusi">
+                <img src="image/5.png" width="600" height="600">
+            </div>
+        </div>
+
+    </div>
+    <div class="ui-grid-a">
+        <div class="ui-block-a"title="点击查看高清大图">
+            <!--第一列-->
+
+            <a href="#xiaotuwu" data-rel="popup" class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/7.jpg"width="300"height="300"></p>
+                <p>车用净化器</p>
+                <p><b>2018年旗舰新品</b>&emsp;新房除醛&emsp;母婴优化</p>
+                <p><b>狂欢大促</b>&emsp;￥2899</p>
+
+            </a>
+            <div data-role="popup" id="xiaotuwu">
+                <img src="image/7.jpg" width="600" height="600">
+            </div>
+
+
+        </div>
+        <div class="ui-block-b"title="点击查看高清大图">
+            <!--第二列-->
+
+            <a href="#xiaotuliu" data-rel="popup" class="ui-btn ui-corner-all ui-shadow">
+                <p><img src="image/9.jpg"width="300"height="300"></p>
+                <p>商用净化器</p>
+                <p><b>除醛升级&emsp;安心居住</b>&emsp;除醛升级版&emsp;一台顶三台</p>
+                <p><b>到手价</b>&emsp;￥2999</p>
+
+            </a>
+            <div data-role="popup" id="xiaotuliu">
+                <img src="image/9.jpg" width="600" height="600">
+            </div>
+        </div>
+
+    </div>
+
+    <!--底部-->
+    <div data-role="footer">
+
+        <div class="sf">
+            相关链接 ： 中国环保网 家用甲醛检测仪 中国环保设备网 中国水处理网
+
+        </div>
+        <div class="sf">
+            江苏省吴江市森力净化商城科技有限公司版权所有 ©2010-2019
+
+        </div>
+        <div class="fnav">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <input type="button" value="电话咨询" data-icon="grid" data-iconpos="top" onclick="dianhua()" >
+                    </li>
+                    <li>
+                        <input type="button" value="联系我们" data-icon="arrow-d" data-iconpos="top"onclick="threePage()">
+                    </li>
+                    <li>
+                        <input type="button" value="手机咨询" data-icon="grid" data-iconpos="top" onclick="shouji()">
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script  type="text/javascript">
+
+    function shouye() {
+        window.location.href="onePage.html";
+    }
+    function threePage() {
+        window.location.href="threePage.html";
+    }
+    function dianhua() {
+        alert("请拨打这个电话:(400-100-5678)咨询");
+    }
+    function shouji() {
+        alert("请拨打这个手机:(13913086968)咨询");
+    }
+
+</script>
+</body>
+</html>

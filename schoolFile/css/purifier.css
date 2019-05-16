@@ -1,0 +1,114 @@
+.tab-jinghuaqi{
+    background: #fff;
+    width: 80%;
+    margin:30px 10% 0px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+    position: absolute;
+}
+#tab-nav{
+    background: #009999;
+    border: 0px solid;
+
+}
+#tab-nav li{
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 18px;
+
+}
+#tab-nav li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.tab-content{
+    padding: 25px;
+}
+#tab-nav li a.active{
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color:#009999;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+/*tab文字和图片区域*/
+.jingxu{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color:#009999;
+}
+.jiayong{
+    text-indent: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+.jiayongyi{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+.jiayonger{
+    width: 98%;
+    float: left;
+    margin-left: 1%;
+    height: 230px;
+}
+.jyeone{
+    width: 33%;
+    height:100%;
+    float: left;
+    position: relative;
+}
+.jyeoneleft{
+    width: 70%;
+    float: left;
+}
+.jyeoneleft img{
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.jyeoneright{
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+.qian{
+
+    font-size: 18px;
+    height: 10%;
+    margin-top: 180px;
+}
+.jyetwo{
+    width: 34%;
+    height:100%;
+    float: left;
+}
+.jyethree{
+    width: 33%;
+    height:100%;
+    float: left;
+}
+.jyethreeleft{
+    width: 70%;
+    float: left;
+}
+.jyethreeleft img{
+    margin-top: 20px;
+}
+.jyeotherleft{
+    width: 70%;
+    float: left;
+}
+.jyeotherleft img{
+    margin-top: 40px;
+}

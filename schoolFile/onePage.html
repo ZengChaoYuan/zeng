@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/森力logo.jpg" >
+    <title>森力首页</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script  src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script  src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        /*首页*/
+        .h3{
+            width: 100%;
+            height: 80px;
+        }
+        .h3l{
+            width: 5%;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            float: left;
+
+        }
+        .h3ltu{
+            margin-top:16px;
+        }
+        .h3m{
+            width: 90%;
+            height: 80px;
+            line-height:80px;
+            float: left;
+            font-size: 28px;
+
+        }
+        .h3r{
+            width: 5%;
+            height: 80px;
+            line-height: 80px;
+            float: left;
+        }
+
+        /*首页头部*/
+
+        .cheadsan{
+            width: 100%;
+            height: 100px;
+        }
+
+        .chsl{
+            width:10%;
+            text-align: center;
+            float: left;
+            height: 100px;
+        }
+        .chsm{
+            width:80%;
+            text-align: center;
+            float: left;
+            height: 100px;
+            line-height: 100px;
+            font-size: 48px;
+
+        }
+        .chsr{
+            width:10%;
+            text-align: center;
+            float: left;
+            height: 100px;
+        }
+        .chsrtu{
+            margin-top: 18px;
+        }
+        .cm{
+            width: 100%;
+            margin-top: 30px;
+            height: 80px;
+        }
+        .sf{
+
+            width: 100%;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            background-color: #333;
+            color: white;
+            font-size: 20px;
+        }
+        .fnav{
+            width: 100%;
+            text-align: center;
+            height: 55px;
+            line-height: 55px;
+            color: white;
+            font-size: 24px;
+
+        }
+
+        /*第三页的主要内容*/
+        .c3content{
+            width: 100%;
+            height: 750px;
+            font-size: 18px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="pageone" data-transition="slide" data-direction="reverse">
+
+
+    <div data-role="panel" id="revealPanel" data-display="reveal">
+
+        <p>&emsp;&emsp;公司始终以“信誉、质量、创新 ”为宗旨，使企业赢得广大客户和各界朋友的信赖与支持。</p>
+        <p>&emsp;&emsp;公司主要服务于电子、医药、生物、生活、航天航空、科研、化工、光学、精密机械等行业。</p>
+        <p>&emsp;&emsp;生产地址：江苏吴江市吴江市同里镇屯南村邱舍工业园。</p>
+        <p>&emsp;&emsp;销售地址：江苏吴江市吴江市恒森国际广场3楼。</p>
+        <p>&emsp;&emsp;联系人：朱喜忠</p>
+        <p>&emsp;&emsp;手机：13913086968</p>
+        <p>&emsp;&emsp;电话：400-100-5678</p>
+        <p>&emsp;&emsp;电子邮件:</p>
+        <p>&emsp;&emsp;ZXZ8888@126.com</p>
+        <p>&emsp;&emsp;邮编：215216</p>
+        <p>&emsp;&emsp;传真号码:</p>
+        <p>&emsp;&emsp;86-512-63189338</p>
+        <p>&emsp;&emsp;竭诚欢迎广大的新、老客户洽谈合作。</p>
+
+
+
+    </div>
+    <div data-role="header">
+
+        <div class="h3">
+            <div class="h3l">
+                <a href="#revealPanel" data-swipe-close="true" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+            </div>
+            <div class="h3m">森力首页-森力净化商城有限公司</div>
+            <div class="h3r"><img class="h3ltu" src="image/shenglvehao.png"></div>
+        </div>
+    </div>
+    <div data-role="content">
+
+
+        <!--内容头部-->
+        <div class="cheadsan">
+
+            <div class="chsl">
+
+                <img src="image/森力logo.jpg" width="115" height="100">
+            </div>
+            <div class="chsm">
+
+                <b>江苏森力净化商城有限公司</b>
+            </div>
+            <div class="chsr">
+
+                <img class="chsrtu" src="image/gengduo.png">
+            </div>
+
+        </div>
+        <!--内容菜单-->
+        <div class="cm">
+            <div class="ui-grid-c">
+
+                <div class="ui-block-a">
+                    <!--第二列-->
+       <input type="button" value="森力首页" data-icon="home" data-iconpos="left"onclick="shouye()" >
+                </div>
+                <div class="ui-block-b">
+                    <!--第二列-->
+                    <input type="button" value="热卖产品" data-icon="arrow-r" data-iconpos="left"onclick="twoPage()" >
+                </div>
+                <div class="ui-block-c">
+                    <!--第二列-->
+                    <input type="button" value="登录" data-icon="back" data-iconpos="left"onclick="login()" >
+                </div>
+                <div class="ui-block-d">
+                    <!--第二列-->
+                    <input type="button" value="网页板" data-icon="arrow-r" data-iconpos="left"onclick="pc()" >
+                </div>
+            </div>
+
+        </div>
+
+        <!--内容中的主要内容-->
+
+        <div class="c3content">
+
+            <ul data-role="listview" data-inset="true" style="font-size: 20px;">
+                <li data-role="list-divider" id="jianjie">公司简介</li>
+                <li>
+                    <p>&emsp;&emsp;吴江市森力净化商城有限公司创建于2010年,即是一家商城有限公司,同时也是一家综合性的净化专业有限公司,位于世界著名历史古镇——江苏省吴江市同里镇。</p>
+
+                    <p>&emsp;&emsp;手机,电视,笔记本,电话卡,盒子,平板,家电,插线板,出行,穿戴,智能,路由器,电源,配件,健康,儿童,耳机,音箱,生活,箱包;空气净化成套设备,空气净化器,过滤器,其他空气净化装置;是我们提供的主要产品及经营范围。</p>
+                    <p>&emsp;&emsp;我们公司注册资金：5000万.我们紧跟发展趋势,不断创新,一直以稳定可靠的产品质量和良好的经营信誉,取得了广大客户的信任.我们紧跟发展趋势,不断创新,一直以稳定可靠的产品质量和良好的经营信誉,取得了广大客</p>
+                    <p>户的信任。</p>
+                    <p>&emsp;&emsp;成立以来,我们务实经营,得到了良好的发展,有一个稳定的员工团队,人数在:105人,日常经营过程中我们严控质量关,市场范围不断扩大,资产总计达到：15000万。</p>
+                    <p>&emsp;&emsp;我们坚持以对社会,客户和企业负责的精神精雕细琢每个产品的每一个细节,为社会提供优质的产品和服务,为客户创造价值。</p>
+                    <p>&emsp;&emsp;对于用人方面,我们坚信要发展,人才是关键,为谋求长远发展,建立并完善了人才资源库,努力做到让所有员工人尽其才,才尽其用,让其在本岗位上发挥特长,尽忠职守。</p>
+
+                </li>
+            </ul>
+            <ul data-role="listview" data-inset="true"style="font-size: 20px;">
+                <li data-role="list-divider" id="xiangguan">从事相关</li>
+                <li>
+                    <p>&emsp;&emsp;手机,电视,笔记本,电话卡,盒子,平板,家电,插线板,出行,穿戴,智能,路由器,电源,配件,健康,儿童,耳机,音箱,生活,箱包等销售。</p>
+                    <p>&emsp;&emsp;净化产品的研发、生产、安装调试及售后维修(风淋室、净化工作台、传递窗、空气过滤器、高效送风口、臭氧发生器、洁净层流罩、FFU净化单元、尘器)。</p>
+                    <p>&emsp;&emsp;净化配件的生产(250FLJ离心风机、风淋室喷嘴、散流板、回风口、洁净地漏、风管密封条、门角、门封头、内三维、外三维、减振器)。</p>
+                    <p>&emsp;&emsp;无尘室用不锈钢制品的设计与制作(不锈钢衣柜、不锈钢工作桌、不锈钢货架、不锈钢推车等等)。</p>
+                    <p>&emsp;&emsp;净化工程的设计、施工、改造及维护(各个净化等级的净化车间、无菌室、洁净室)。</p>
+                    <p>&emsp;&emsp;净化行业相关产品的代理销售(净化工程配套铝型材、净化灯、紫外线杀菌灯、压差表、尘埃粒子计数器、风速仪、离子风机、离子风枪、洁净服)。</p>
+                </li>
+            </ul>
+            <ul data-role="listview" data-inset="true"style="font-size: 20px;">
+                <li data-role="list-divider">企业文化</li>
+                <li>
+                    <p>&emsp;&emsp;没有一个品牌强大到不能被挑战 也没有一个企业弱小到不可以去竞争--苏州森力净化科技有限公司。 </p>
+                    <p>&emsp;&emsp;今天的森力，明天中国的森力，未来世界的森力,以市场为导向，以品质为基础、以人才为根本、以服务为宗旨、以创新为动力、以发展为前提，做客户优质的供应商，给客户提供优质的产品和服务，拒绝暴利，不</p>
+                    <p>偷工减料，赚良心钱。</p>
+                    <p>&emsp;&emsp;以良好的口碑使企业进入一个良性循环的发展模式，进一步完善生产型施工企业产业模式，做国内一流净化企业。</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div data-role="footer">
+
+        <div class="sf">
+            相关链接 ： 中国环保网 家用甲醛检测仪 中国环保设备网 中国水处理网
+
+        </div>
+        <div class="sf">
+            江苏省吴江市森力净化商城科技有限公司版权所有 ©2010-2019
+
+        </div>
+        <div class="fnav">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <input type="button" value="电话咨询" data-icon="grid" data-iconpos="top" onclick="dianhua()" >
+                    </li>
+                    <li>
+                        <input type="button" value="联系我们" data-icon="arrow-d" data-iconpos="top"onclick="threePage()">
+                    </li>
+                    <li>
+                        <input type="button" value="手机咨询" data-icon="grid" data-iconpos="top" onclick="shouji()">
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script  type="text/javascript">
+    function shouye() {
+        alert("当前页为首页");
+    }
+    function twoPage() {
+        window.location.href="twoPage.html";
+    }
+    function login() {
+        window.location.href="telIndex.html";
+    }
+    function pc() {
+        window.location.href="index.html";
+    }
+    function threePage() {
+        window.location.href="threePage.html";
+    }
+    function dianhua() {
+        alert("请拨打这个电话:(400-100-5678)咨询");
+    }
+    function shouji() {
+        alert("请拨打这个手机:(13913086968)咨询");
+    }
+</script>
+</body>
+</html>

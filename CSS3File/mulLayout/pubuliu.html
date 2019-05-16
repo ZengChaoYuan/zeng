@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>columns多列布局</title>
+    <style>
+      body,ul,li{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+        ul{
+            border: 1px solid #000;
+        }
+        li{
+            /*转换成行级块元素，一个个排开，但都是靠下，怎么使得靠上排列*/
+            display: inline-block;
+            /*靠上排列，但还是不妥,应该是直接顶上去*/
+            float: left;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            /*把标准模型修改为ie6混杂模型*/
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="image/q1.jpg"alt=""></li>
+    <li><img src="image/q2.jpg"alt=""></li>
+    <li><img src="image/q4.jpg"alt=""></li>
+    <li><img src="image/q7.jpg"alt=""></li>
+    <li><img src="image/q8.png"alt=""></li>
+    <li><img src="image/q9.png"alt=""></li>
+    <li><img src="image/q10.jpg"alt=""></li>
+    <li><img src="image/q11.jpg"alt=""></li>
+    <li><img src="image/q12.jpg"alt=""></li>
+    <li><img src="image/q13.jpg"alt=""></li>
+    <li><img src="image/q14.jpg"alt=""></li>
+    <li><img src="image/q15.jpg"alt=""></li>
+</ul>
+</body>
+</html>

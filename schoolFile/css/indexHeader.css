@@ -1,0 +1,193 @@
+.huanying{
+    width: 100%;
+    height: 60px;
+    background: #ccc;
+    color: #333333;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+}
+
+.indexHeader{
+    width: 100%;
+    height: 40px;
+    background-color: peru;
+}
+.iHOne{
+    width: 100%;
+    height: 40px;
+    background-color:#333333;
+}
+.iHOOne{
+    width:80%;
+    height:40px;
+
+    margin: 0px auto;
+
+}
+.iHOOLeft{
+    width:75%;
+    height: 40px;
+
+    float: left;
+}
+
+.iHOOLFontOne{
+    width: 3%;
+    height: 40px;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.iHOOLFontOne:hover{
+    color: white;
+}
+.iHOOLFontTwo{
+    color: #999999;
+    width: 4%;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.iHOOLFontTwo:hover{
+    color: white;
+}
+.iHOOLFontThree{
+    color: #999999;
+    width: 5%;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.iHOOLFontThree:hover{
+    color: white;
+}
+.iHOOLFontFour{
+    width: 7%;
+    height: 40px;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.newsa{
+    text-decoration: none;
+    color: #999999;
+}
+.newsa:hover{
+    color: white;
+}
+.huiyuan{
+    text-decoration: none;
+    color: #999999;
+    background-color: #333;
+    border: 0px;
+    outline: none;
+}
+.huiyuan:hover{
+    color: white;
+}
+.iHOOLFontFour:hover{
+    color: white;
+}
+
+.iHOOLFontSeven{
+    color: #999999;
+    width: 10%;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.iHOOLFontSeven:hover{
+    color: white;
+}
+.iHOOLFontEight{
+    color: #999999;
+    width: 11%;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.iHOOLFontEight:hover{
+    color: white;
+}
+.iHOOLS{
+    width: 1%;
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color:#666666;
+    float: left;
+}
+.iHOORight{
+    width: 25%;
+    height: 40px;
+    float: left;
+}
+.iHOORFontTwo{
+    width: 12%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#999999;
+    float: left;
+}
+.logina{
+    text-decoration: none;
+    color:#999999;
+}
+.logina:hover{
+    color: white;
+}
+.iHOORFontTwo:hover{
+    color:white;
+    cursor: pointer;
+}
+.iHOORFontFour{
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#999999;
+    float: left;
+}
+.iHOORFontFour:hover{
+    color: white;
+    cursor: pointer;
+}
+.iHOORFontTen{
+    width: 47%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color:#999999;
+    float: right;
+    background-color:#666666;
+
+}
+.iHOORFontTen:hover{
+    background-color:white;
+    cursor: pointer;
+    color: red;
+}

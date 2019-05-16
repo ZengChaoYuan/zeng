@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/森力logo.jpg" >
+    <title>净化器介绍</title>
+    <link rel="stylesheet" href="css/SenLiOneself.css" type="text/css">
+    <link rel="stylesheet" href="css/purifier.css" type="text/css">
+    <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript">
+
+        //滑动导航
+        $(document).ready(function () {
+            $('#menu,#close-side-nav').click(function (event) {
+                event.preventDefault();
+                $('#main,#side-nav').toggleClass('off-display');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--页面内容部分-->
+<div id="wrapper">
+    <!--头部-->
+    <div id="main">
+
+        <div class="header">
+
+            <div class="hOne">
+                森力会员平台
+
+            </div>
+
+            <div class="hThree">
+
+                <button onclick="tuichu()" class="hTwoBtn">退出登录</button>
+            </div>
+            <!--退出登录-->
+            <div class="hFour">
+
+                欢迎zjl先生
+            </div>
+
+            <!--更换头像区域-->
+            <div class="hFive" title="更换头像">
+
+                <img class="pic">
+                <input class="upload" name="file" type="file" style="display: none"/>
+
+            </div>
+
+
+        </div>
+
+        <button href="" id="menu">菜单</button>
+        <!--这边是可以改变的地方-->
+        <!--新闻资讯-->
+        <div class="xinwen">
+
+            <div class="xinwentop">净化器介绍</div>
+
+            <div class="xinwenbot">
+
+
+                <div class="tab-jinghuaqi">
+                    <ol id="tab-nav">
+                        <li><a href="#home" id="nav-home">家用净化器</a></li>
+                        <li><a href="#business" id="nav-business">商用净化器</a></li>
+                        <li><a href="#car" id="nav-car">车用净化器</a></li>
+                    </ol>
+
+
+                    <div class="tab-content">
+                        <div id="home">
+
+                            <p class="jingxu">仅需 10 分钟</p>
+
+
+                            <p class="jiayong">家用空气净化器主要用于清除室内空气污染物有效提高室内空气清洁度，CADR</p>
+
+
+                            <p class="jiayongyi">值高达<span class="jingxu">406</span>立方米/h净化面积可达<span class="jingxu">48</span>平方米全屋空气净化。</p>
+
+                            <!--图片区域-->
+                            <div class="jiayonger">
+
+                                <!--图一-->
+
+                                <div class="jyeone">
+
+                                    <div class="jyeoneleft"><img src="image/5.png" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">699元</p>
+                                    </div>
+                                </div>
+                                <div class="jyetwo">
+                                    <div class="jyeoneleft"><img src="image/1.jpg" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">1299元</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="jyethree">
+                                    <div class="jyethreeleft"><img src="image/15.jpg" width="150"  height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">1599元</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div id="business">
+                            <p class="jingxu">仅需 12 分钟</p>
+
+
+                            <p class="jiayong">商用空气净化器主要用于清除室内空气污染物有效提高室内空气清洁度，CADR</p>
+
+
+                            <p class="jiayongyi">值高达<span class="jingxu">506</span>立方米/h净化面积可达<span class="jingxu">68</span>平方米全屋空气净化。</p>
+
+                            <!--图片区域-->
+                            <div class="jiayonger">
+
+                                <!--图一-->
+
+                                <div class="jyeone">
+
+                                    <div class="jyeoneleft"><img src="image/7.jpg" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">998元</p>
+                                    </div>
+                                </div>
+                                <div class="jyetwo">
+                                    <div class="jyeoneleft"><img src="image/9.jpg" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">1939元</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="jyethree">
+                                    <div class="jyethreeleft"><img src="image/10.jpg" width="150"  height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">8766元</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="car">
+                            <p class="jingxu">仅需 3 分钟</p>
+
+
+                            <p class="jiayong">车载空气净化器主要用于清除室内空气污染物有效提高室内空气清洁度，CADR</p>
+
+
+                            <p class="jiayongyi">值高达<span class="jingxu">206</span>立方米/h净化面积可达<span class="jingxu">28</span>平方米全屋空气净化。</p>
+                            <!--图片区域-->
+                            <div class="jiayonger">
+
+                                <!--图一-->
+
+                                <div class="jyeone">
+
+                                    <div class="jyeoneleft"><img src="image/2.jpg" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">399元</p>
+                                    </div>
+                                </div>
+                                <div class="jyetwo">
+                                    <div class="jyeoneleft"><img src="image/5.jpg" width="200" height="200"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">1758元</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="jyethree">
+                                    <div class="jyeotherleft"><img src="image/16.jpg" width="150"  height="180"></div>
+                                    <div class="jyeoneright">
+                                        <p class="qian">3477元</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--导航部分-->
+
+    <div id="side-nav">
+        <a href="" id="close-side-nav"></a>
+
+        <!--树形菜单-->
+        <li><button class="menuyi" onclick="SenLiOneself()" title="返回平台首页">平台首页</button></li>
+
+        <li class="leftfirstmenu" onclick="showTwoMenu(1)">产品分类</li>
+        <ul id="1" style="display: none">
+            <li class="lefttwomenu"><button class="menu">净化器介绍</button></li>
+            <li class="lefttwomenu"><button class="menu">手机</button></li>
+            <li class="lefttwomenu"><button class="menu">电脑</button></li>
+            <li class="lefttwomenu"><button class="menu">笔记本</button></li>
+            <li class="lefttwomenu"><button class="menu">家电</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(2)">爆款产品</li>
+        <ul id="2" style="display: none">
+            <li class="lefttwomenu"><button class="menu">森力MIX</button></li>
+            <li class="lefttwomenu"><button class="menu">商用净化器</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(3)">关于森力</button></li>
+        <ul id="3" style="display: none">
+            <li class="lefttwomenu"><button class="menu">公司简介</button></li>
+            <li class="lefttwomenu"><button class="menu">从事相关</button></li>
+            <li class="lefttwomenu"><button class="menu" onclick="aboutOur()">关于我们</button></li>
+            <li class="lefttwomenu"><button class="menu">咨询留言</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(4)">下载App</li>
+        <ul id="4" style="display: none">
+            <li class="lefttwomenu"><button class="menu">点此下载</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(5)">联系客服</li>
+        <ul id="5" style="display: none">
+            <li class="lefttwomenu"><button class="menu">客服服务</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(6)">轻松一刻</li>
+        <ul id="6" style="display: none">
+            <li class="lefttwomenu"><button class="menu" onclick="hitmouse()">打地鼠</button></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script  type="text/javascript">
+    function aboutOur() {
+        window.location.href="aboutOur.html";
+    }
+    function hitmouse() {
+        var confirm=window.confirm("尊贵的会员,接下来让我们轻松一下");
+        if(confirm){
+            window.location.href="mouse.html";
+        }else{
+
+        }
+    }
+    function SenLiOneself() {
+        window.location.href="SenLiOneself.html";
+    }
+</script>
+<script  type="text/javascript" src="js/purifier.js"></script>
+<script  type="text/javascript" src="js/SenLiOneself.js"></script>
+</html>

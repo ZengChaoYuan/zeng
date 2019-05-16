@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <link rel="icon" href="image/森力logo.jpg" >
+    <title>森力净化商城登录系统</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+<script  src="js/login.js" type="text/javascript"></script>
+<script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!--森力净化商城-->
+<div class="background">
+
+    <div class="head">森力净化商城登录</div>
+
+    <div class="zhanghao">
+        账号：<input type = "text"
+        onkeyup="value=value.replace(/[\W]/g,'') "
+       onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+         id = "account" placeholder="请输入账号" title="仅允许输入字母和数字,输入其他字符都会被自动删除"/>
+    </div>
+    <div class="mima">
+        密码：<input type = "password"
+          onkeyup="value=value.replace(/[\W]/g,'') "
+       onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+         id = "adminPswd"placeholder="请输入密码"title="仅允许输入字母和数字,输入其他字符都会被自动删除"/>
+    </div>
+    <div class="yanzhengma">
+        验证码：<input type = "text" 
+         onkeyup="value=value.replace(/[\W]/g,'') "
+       onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+        id = "input" placeholder="验证码" title="不区分大小写"/>
+        <input type = "button" id="code"title="看不清,下一张" />
+    </div>
+
+    <div class="btn">
+        <input type="button" value="登录" class="denglu" id="check" title="登录">&emsp;
+        <input type="button" value="重置" class="denglu" id="chongzhi" title="重置">
+    </div>
+    <div class="btn2">
+        <p class="returnSenLia">前往<a href="index.html"class="zhucea">森力首页</a>&emsp;前往<a href="register.html"class="zhucea">注册</a></p>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<div id="holder" class="normal" title="拖动图片到此处更换背景图"></div>
+<script  type="text/javascript" src="js/replaceImg.js"></script>
+</body>
+</html>

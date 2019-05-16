@@ -1,0 +1,34 @@
+body,ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*清除浮动*/
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*使得ul变成行级块元素,可以居中*/
+.wrapper{
+    text-align: center;
+}
+.list{
+    display: inline-block;
+}
+/*-----------------*/
+.list li{
+    float: left;
+}
+.item{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    /*有些间隙*/
+    margin: 5px;
+}
+.item img{
+    /*取消默认6像素*/
+    display: block;
+    width: 230px;
+}

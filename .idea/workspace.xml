@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fec7b4fc-ecca-4b65-ba61-41addb7cf71b" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1498470642">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="7" />
+          <entry key="html" value="1" />
+          <entry key="png" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="393" />
+          <entry key="html" value="816" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="393" />
+          <entry key="HTML" value="816" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="176005058">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="42" />
+          <entry key="html" value="2662" />
+          <entry key="js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="42" />
+          <entry key="HTML" value="2662" />
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="9" />
+          <entry key="html" value="291" />
+          <entry key="js" value="3" />
+          <entry key="png" value="47" />
+          <entry key="rnc" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="291" />
+          <entry key="Image" value="47" />
+          <entry key="JavaScript" value="3" />
+          <entry key="RNG Compact" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-2051373038">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AjaxFile/Ajax/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-884">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AjaxFile/lianxiangci/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AjaxFile/refreshlessNav/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1108" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AjaxFile/waterfall/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-520" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS3File/animate/showPicture1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS3File/Bootstrap/ceshi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schoolFile/threePage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5880">
+              <caret line="210" column="7" selection-start-line="210" selection-start-column="7" selection-end-line="210" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schoolFile/twoPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schoolFile/mouse.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3164">
+              <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>async</find>
+      <find>as</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HTML5File/music/ceShi.html" />
+        <option value="$PROJECT_DIR$/HTML5File/music/index1.html" />
+        <option value="$PROJECT_DIR$/HTML5File/music/index2.html" />
+        <option value="$PROJECT_DIR$/HTML5File/scratchCard/index.html" />
+        <option value="$PROJECT_DIR$/HTML5File/scratchCard/index1.html" />
+        <option value="$PROJECT_DIR$/HTML5File/SVG2/index.html" />
+        <option value="$PROJECT_DIR$/HTML5File/SVG2/index1.html" />
+        <option value="$PROJECT_DIR$/HTML5File/SVG2/index2.html" />
+        <option value="$PROJECT_DIR$/HTML5File/tryMusic/ceShi.html" />
+        <option value="$PROJECT_DIR$/HTML5File/tryMusic/index.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/hideAndShow/index.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/hideAndShow/JQueryAnimate.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/hideAndShow/人物信息展示.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/move/index.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/move/index2.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/number/demo.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/number/index.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/number/购物车demo.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/number/购物车demo1.html" />
+        <option value="$PROJECT_DIR$/JQueryFile/slideShow/index.html" />
+        <option value="$PROJECT_DIR$/jQueryMobile/onePage.html" />
+        <option value="$PROJECT_DIR$/jQueryMobile/telIndex.html" />
+        <option value="$PROJECT_DIR$/jQueryMobile/telRegister.html" />
+        <option value="$PROJECT_DIR$/jQueryMobile/threePage.html" />
+        <option value="$PROJECT_DIR$/jQueryMobile/twoPage.html" />
+        <option value="$PROJECT_DIR$/JSFile/focus/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/focus/index1.html" />
+        <option value="$PROJECT_DIR$/JSFile/hitMouse/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/hitMouse/index1.html" />
+        <option value="$PROJECT_DIR$/JSFile/liandong/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/liandong/index1.html" />
+        <option value="$PROJECT_DIR$/JSFile/menu/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/mi/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/mi/index1.html" />
+        <option value="$PROJECT_DIR$/JSFile/mi/index2.html" />
+        <option value="$PROJECT_DIR$/JSFile/reward/index.html" />
+        <option value="$PROJECT_DIR$/JSFile/tanwindow/index.html" />
+        <option value="$PROJECT_DIR$/schoolFile/aboutOur.html" />
+        <option value="$PROJECT_DIR$/schoolFile/aboutSenLi.html" />
+        <option value="$PROJECT_DIR$/schoolFile/detail.html" />
+        <option value="$PROJECT_DIR$/schoolFile/index.html" />
+        <option value="$PROJECT_DIR$/schoolFile/login.html" />
+        <option value="$PROJECT_DIR$/schoolFile/mouse.html" />
+        <option value="$PROJECT_DIR$/schoolFile/onePage.html" />
+        <option value="$PROJECT_DIR$/schoolFile/purifier.html" />
+        <option value="$PROJECT_DIR$/schoolFile/SenLiOneself.html" />
+        <option value="$PROJECT_DIR$/schoolFile/telIndex.html" />
+        <option value="$PROJECT_DIR$/schoolFile/telRegister.html" />
+        <option value="$PROJECT_DIR$/schoolFile/threePage.html" />
+        <option value="$PROJECT_DIR$/schoolFile/twoPage.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="25" />
+    <option name="y" value="105" />
+    <option name="width" value="1750" />
+    <option name="height" value="805" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxFile" type="462c0819:PsiDirectoryNode" />
+              <item name="Ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxFile" type="462c0819:PsiDirectoryNode" />
+              <item name="refreshlessNav" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="AjaxFile" type="462c0819:PsiDirectoryNode" />
+              <item name="waterfall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS3File" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS3File" type="462c0819:PsiDirectoryNode" />
+              <item name="animate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS3File" type="462c0819:PsiDirectoryNode" />
+              <item name="Bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="DragandDrop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="filesUpload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="scratchCard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="SVG2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="SVGAnimate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5File" type="462c0819:PsiDirectoryNode" />
+              <item name="tryMusic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JQueryFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JQueryFile" type="462c0819:PsiDirectoryNode" />
+              <item name="hideAndShow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JQueryFile" type="462c0819:PsiDirectoryNode" />
+              <item name="move" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JQueryFile" type="462c0819:PsiDirectoryNode" />
+              <item name="number" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="jQueryMobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="focus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="hitMouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="liandong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="mi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="reward" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFile" type="462c0819:PsiDirectoryNode" />
+              <item name="tanwindow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zjl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zjl" type="462c0819:PsiDirectoryNode" />
+              <item name="schoolFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../第一版/zjl" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\1前端工程师进阶之路\个人网站\zjl\images" />
+      <recent name="G:\1前端工程师进阶之路\个人网站\zjl\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\1前端工程师进阶之路\个人网站\zjl\js" />
+      <recent name="G:\1前端工程师进阶之路\个人网站\zjl\css" />
+      <recent name="G:\1前端工程师进阶之路\个人网站\zjl\images" />
+      <recent name="G:\1前端工程师进阶之路\个人网站\one\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fec7b4fc-ecca-4b65-ba61-41addb7cf71b" name="Default Changelist" comment="" />
+      <created>1555050869097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555050869097</updated>
+      <workItem from="1555050872103" duration="22778000" />
+      <workItem from="1555084446322" duration="24677000" />
+      <workItem from="1555205993729" duration="12048000" />
+      <workItem from="1556776309379" duration="2119000" />
+      <workItem from="1556858893899" duration="13670000" />
+      <workItem from="1556960706772" duration="599000" />
+      <workItem from="1557372151124" duration="6461000" />
+      <workItem from="1557976882145" duration="3232000" />
+      <workItem from="1557984021681" duration="878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="86462000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10634082" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10832232" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HTML5File/tryMusic/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/hideAndShow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/hideAndShow/JQueryAnimate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="126" column="8" lean-forward="true" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/hideAndShow/人物信息展示.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/move/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/move/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/number/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/number/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/number/购物车demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/number/购物车demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQueryFile/slideShow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryMobile/onePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="258" column="7" selection-start-line="258" selection-start-column="7" selection-end-line="258" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryMobile/telIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="143" column="7" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryMobile/telRegister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryMobile/threePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryMobile/twoPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="289" column="8" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/focus/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/focus/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/hitMouse/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/hitMouse/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/liandong/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/liandong/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/mi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="212" column="8" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/mi/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/mi/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/reward/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSFile/tanwindow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/aboutOur.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="172" column="7" selection-start-line="172" selection-start-column="7" selection-end-line="172" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/aboutSenLi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="319" column="8" selection-start-line="319" selection-start-column="8" selection-end-line="319" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="375" column="8" selection-start-line="375" selection-start-column="8" selection-end-line="375" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="1511" column="8" selection-start-line="1511" selection-start-column="8" selection-end-line="1511" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/onePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7252">
+          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/purifier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7616">
+          <caret line="272" column="8" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/register.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/SenLiOneself.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/telIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3948">
+          <caret line="141" column="7" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/telRegister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5208">
+          <caret line="186" column="9" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/threePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5880">
+          <caret line="210" column="7" selection-start-line="210" selection-start-column="7" selection-end-line="210" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/twoPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolFile/mouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3164">
+          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AjaxFile/Ajax/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AjaxFile/lianxiangci/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AjaxFile/refreshlessNav/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS3File/animate/ceShi.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS3File/animate/showPicture.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AjaxFile/waterfall/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS3File/animate/showPicture1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS3File/Bootstrap/ceshi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

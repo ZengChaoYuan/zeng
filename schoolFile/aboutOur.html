@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="icon" href="image/森力logo.jpg" >
+    <link rel="stylesheet" href="css/SenLiOneself.css" type="text/css">
+    <link rel="stylesheet" href="css/purifier.css" type="text/css">
+    <link rel="stylesheet" href="css/aboutOur.css" type="text/css">
+    <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript">
+        //滑动导航
+        $(document).ready(function () {
+            $('#menu,#close-side-nav').click(function (event) {
+                event.preventDefault();
+                $('#main,#side-nav').toggleClass('off-display');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--页面内容部分-->
+<div id="wrapper">
+    <!--头部-->
+    <div id="main">
+
+        <div class="header">
+
+            <div class="hOne">
+                森力会员平台
+
+            </div>
+
+            <div class="hThree">
+
+                <button onclick="tuichu()" class="hTwoBtn">退出登录</button>
+            </div>
+            <!--退出登录-->
+            <div class="hFour">
+
+                欢迎zjl先生
+            </div>
+
+            <!--更换头像区域-->
+            <div class="hFive" title="更换头像">
+
+                <img class="pic">
+                <input class="upload" name="file" type="file" style="display: none"/>
+
+            </div>
+
+
+        </div>
+
+        <button href="" id="menu">菜单</button>
+        <!--这边是可以改变的地方-->
+        <!--新闻资讯-->
+        <div class="xinwen">
+
+            <div class="xinwentop">关于我们</div>
+
+
+            <div class="xinwenbot">
+                <div class="waizuo">
+
+                    <img src="image/森力logo.jpg" width="60%" height="60%" >
+                    <p class="waizuozi">想了解森力商城,请翻开右边那本</p>
+
+
+
+                </div>
+
+                <div class="wai">
+
+                    <div class="neicontent">
+
+                        <ol class="book">
+                            <li class="cover">
+                                    <p class="coverziti">城森</p>
+                                    <p class="coverziti">的力</p>
+                                    <p class="coverziti">那净</p>
+                                    <p class="coverziti">些化</p>
+                                    <p class="coverziti">事商</p>
+                            </li>
+                            <li class="page1">
+                                <p class="fanyezitione">公司始终以<b>“信誉、质量、创新 ”</b></p>
+                                <p class="fanyezitileft">为宗旨，使企业赢得广大客户和各界</p>
+                                <p class="fanyezitileft">朋友的信赖与支持。</p>
+                                <p class="fanyeziti">公司主要服务于<b>电子、医药、生</b></p>
+                                <p class="fanyezitileft"><b>物、生活、航天航空、科研、化工、</b></p>
+                                <p class="fanyezitileft"><b>光学、精密机械</b>等行业。</p>
+                                <p class="fanyeziti">生产地址：江苏吴江市吴江市同</p>
+                                <p class="fanyezitileft">里镇屯南村邱舍工业园。</p>
+                                <p class="fanyeziti">销售地址：江苏吴江市吴江市恒</p>
+                                <p class="fanyezitileft">森国际广场3楼。</p>
+                            </li>
+                            <li class="page2">
+
+                                <p class="fanyezititwo">联系人：朱喜忠</p>
+                                <p class="fanyezitiright">手机：13913086968</p>
+                                <p class="fanyezitiright">电话：400-100-5678</p>
+                                <p class="fanyezitiright">电子邮件：ZXZ8888@126.com</p>
+                                <p class="fanyezitiright">邮编：215216</p>
+                                <p class="fanyezitiright">传真号码：86-512-63189338</p>
+                                <p class="fanyezitiright">竭诚欢迎广大的新、老客户洽谈合</p>
+                                <p class="fanyezitiright">作。</p>
+                            </li>
+
+
+                        </ol>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--导航部分-->
+
+    <div id="side-nav">
+        <a href="" id="close-side-nav"></a>
+
+        <!--树形菜单-->
+        <li><button class="menuyi" onclick="SenLiOneself()" title="返回平台首页">平台首页</button></li>
+
+        <li class="leftfirstmenu" onclick="showTwoMenu(1)">产品分类</li>
+        <ul id="1" style="display: none">
+            <li class="lefttwomenu"><button class="menu" onclick="purifier()">净化器介绍</button></li>
+            <li class="lefttwomenu"><button class="menu">手机</button></li>
+            <li class="lefttwomenu"><button class="menu">电脑</button></li>
+            <li class="lefttwomenu"><button class="menu">笔记本</button></li>
+            <li class="lefttwomenu"><button class="menu">家电</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(2)">爆款产品</li>
+        <ul id="2" style="display: none">
+            <li class="lefttwomenu"><button class="menu">森力MIX</button></li>
+            <li class="lefttwomenu"><button class="menu">商用净化器</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(3)">关于森力</button></li>
+        <ul id="3" style="display: none">
+            <li class="lefttwomenu"><button class="menu">公司简介</button></li>
+            <li class="lefttwomenu"><button class="menu">从事相关</button></li>
+            <li class="lefttwomenu"><button class="menu">关于我们</button></li>
+            <li class="lefttwomenu"><button class="menu">咨询留言</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(4)">下载App</li>
+        <ul id="4" style="display: none">
+            <li class="lefttwomenu"><button class="menu">点此下载</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(5)">联系客服</li>
+        <ul id="5" style="display: none">
+            <li class="lefttwomenu"><button class="menu">客服服务</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(6)">轻松一刻</li>
+        <ul id="6" style="display: none">
+            <li class="lefttwomenu"><button class="menu" onclick="hitmouse()">打地鼠</button></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    function purifier(){
+
+        window.location.href="purifier.html";
+
+    }
+    function hitmouse() {
+        var confirm=window.confirm("尊贵的会员,接下来让我们轻松一下");
+        if(confirm){
+            window.location.href="mouse.html";
+        }else{
+
+        }
+
+    }
+    function SenLiOneself() {
+        window.location.href="SenLiOneself.html";
+    }
+</script>
+<script type="text/javascript" src="js/SenLiOneself.js"></script>
+</html>

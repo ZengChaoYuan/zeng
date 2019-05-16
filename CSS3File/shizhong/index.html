@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS实现简易的表盘效果</title>
+    <style>
+        body,ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            position: relative;
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+        li{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+            width: 2px;
+            height: 10px;
+            background: #000;
+            /*要改变谁的中心点，就给谁设置上transform-origin*/
+            /*先水平,后垂直*/
+            transform-origin:1px 150px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+</ul>
+<script src="js/index.js"></script>
+</body>
+</html>

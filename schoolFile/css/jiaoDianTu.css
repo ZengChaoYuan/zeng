@@ -1,0 +1,43 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#left{
+    margin-top: 4px;
+    margin-left: 20%;
+    width: 140px;
+    float: left;
+}
+#left img{
+    width: 140px;
+
+}
+#right{
+    margin-top: 4px;
+    margin-left: 10px;
+    width: 440px;
+    float: left;
+}
+#right img{
+    width: 440px;
+    display: none;
+
+}
+
+/*加上#right让权重一样，下面优先生效*/
+#right  .show{
+    display:inline-block;
+}
+#pointer{
+    margin-top: 4px;
+    margin-left: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box{
+    position: relative;
+    /*background-color: yellowgreen;*/
+}
+

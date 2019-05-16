@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("../image/2019.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.zhucexingxi{
+    margin: 150px auto;
+    width: 700px;
+    height: 400px;
+    background-color: rgba(102,102,102,0.8);
+
+    border-radius: 20px;
+}
+.hrtop{
+    color: white;
+    margin-left: 17px;
+    font-size: 18px;
+}
+/*这里的a是超链接*/
+a{
+    text-decoration: none;
+    color:red;
+}
+
+.hrself{
+    width: 100%;
+    height: 30px;
+}
+.hrselfhr{
+    margin:0px auto;
+}
+/*水平线以下*/
+.forminfomation{
+    width: 50%;
+    height: 200px;
+    margin: 0px auto;
+    color: white;
+}
+#name{
+    width: 240px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px #cccccc solid;
+}
+#password{
+    width: 240px;
+    height: 30px;
+    border: 1px #cccccc solid;
+}
+#repassword{
+    width: 240px;
+    height: 30px;
+    border: 1px #cccccc solid;
+}
+#tel{
+    width: 240px;
+    height: 30px;
+    border: 1px #cccccc solid;
+}
+#letter{
+    width: 240px;
+    height: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px #cccccc solid;
+}
+#registerbtn{
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    color: white;
+    background-color:red;
+    outline: none;
+    border:0px;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 30px;
+    border-radius: 8px;
+}

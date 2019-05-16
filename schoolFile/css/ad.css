@@ -1,0 +1,21 @@
+.ad{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 576px;
+    /*高度一开始设为324px好调位置*/
+    height:0;
+
+}
+.dachabtn{
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    z-index: 999;
+}
+.bg{
+
+    width: 576px;
+
+}

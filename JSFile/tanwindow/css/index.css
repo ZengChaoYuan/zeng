@@ -1,0 +1,21 @@
+body{
+    height: 700px;
+}
+.ad{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 576px;
+    /*一开始高度设为0，这样bug就不会出现了，而不是删掉，没有定义高度的话，bug就会出现*/
+    height: 0;
+
+}
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.bg{
+    width: 576px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG动画</title>
+    <style>
+       body{
+           margin: 0;
+           background: #333;
+       }
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .item{
+            display: inline-block;
+        }
+        svg{
+            width: 40px;
+            height: 40px;
+            margin: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <!--第一个-->
+    <div class="item item1">
+        <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="4" height="20" fill="#ff6700">
+                <!--repeatCount="indefinite"重复闪-->
+                <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="7" y="0" width="4" height="20" fill="#ff6700">
+                <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="14" y="0" width="4" height="20" fill="#ff6700">
+                <animate attributeName="opacity" from="0" to="1" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+    </div>
+    <!--第二个-->
+    <div class="item item2">
+        <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="4" height="20" fill="#ff6700">
+                <animate attributeName="height" values="20;10;20" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="7" y="0" width="4" height="20" fill="#ff6700">
+                <animate attributeName="height" values="20;10;20" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="14" y="0" width="4" height="20" fill="#ff6700">
+                <animate attributeName="height" values="20;10;20" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+    </div>
+    <!--第三个-->
+    <div class="item item3">
+        <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="4" height="10" fill="#ff6700">
+                <animate attributeName="y" values="20;10;20" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="7" y="0" width="4" height="10" fill="#ff6700">
+                <animate attributeName="y" values="20;10;20" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="14" y="0" width="4" height="10" fill="#ff6700">
+                <animate attributeName="y" values="20;10;20" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+    </div>
+    <!--第四个-->
+    <div class="item item4">
+        <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="7" width="4" height="6" fill="#ff6700">
+                <animate attributeName="height" values="6;20;6" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                <animate attributeName="y" values="7;0;7" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="7" y="7" width="4" height="6" fill="#ff6700">
+                <animate attributeName="height" values="6;20;6" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animate>
+                <animate attributeName="y" values="7;0;7" begin="0.2s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+            <rect x="14" y="7" width="4" height="6" fill="#ff6700">
+                <animate attributeName="height" values="6;20;6" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animate>
+                <animate attributeName="y" values="7;0;7" begin="0.4s" dur="0.6s" repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+    </div>
+</div>
+</body>
+</html>

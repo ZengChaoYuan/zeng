@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            position:absolute;
+            top:50px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: #ff6677;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<button class="move">move</button>
+<button class="stop">stop</button>
+<div class="box"></div>
+<script  src="js/jquery-3.3.1.js"></script>
+<script  src="js/jquery.easing.min.js"></script>
+<script >
+    $('.move').click(function () {
+        //运动
+       $('.box')
+           .animate({
+           left:500
+       },2000, 'linear')
+           .animate({
+           top:300
+       })
+    });
+    $('.stop').click(function () {
+        $('.box').stop(true,true);
+    });
+</script>
+</body>
+</html>

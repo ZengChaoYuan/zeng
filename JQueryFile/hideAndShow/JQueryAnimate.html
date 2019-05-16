@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人物信息展示</title>
+    <style>
+        .list{
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+        }
+        .item{
+            width: 300px;
+            padding: 20px 0;
+            border-radius: 10px;
+            background: #bbb;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .item .img{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+            overflow: hidden;
+            vertical-align: middle;
+            background-color: #000;
+        }
+        .item img{
+            width: 100%;
+            height: 100%;
+        }
+        .item h3{
+            display: inline-block;
+            margin: 0 0 0 20px;
+            vertical-align: middle;
+        }
+        .item p{
+            display: none;
+            margin: 20px;
+            word-wrap: break-word;
+        }
+        /*加号样式*/
+        .add{
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 30px;
+            border: 0;
+            background: #ff6677;
+            color: #fff;
+            outline: none;
+            margin: 0 auto;
+        }
+
+        /*弹层样式*/
+        .hide{
+            display: none;
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right:0;
+            background: rgba(0,0,0,.5);
+            z-index: 1000;
+        }
+        .alert{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -145px;
+            transform: translateY(-50%);
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            text-align: center;
+            z-index: 1001;
+        }
+        .alert input{
+            width: 200px;
+            height: 30px;
+            margin: 20px 0;
+            border: none;
+            border-bottom: 1px solid #ff6677;
+            outline: none;
+            font-size: 18px;
+            color: #888;
+        }
+        .alert .ok{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 30px;
+            color: #ff6677;
+            background: #fff;
+            border: 1px solid #ff6677;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<button class="add">+</button>
+<div class="list">
+    <div class="item">
+        <div class="img">
+            <img src="image/1.png" alt="">
+        </div>
+        <h3>Aimee</h3>
+        <p>前端讲师Aimee,唱歌跳舞打游戏,听歌读书敲代码</p>
+    </div>
+</div>
+
+<!--这部分要动态的添加-->
+<!--<div class="hide"></div>-->
+<!--<div class="alert">-->
+    <!--<input type="text" class="name" value="name">-->
+    <!--<input type="text" class="url" value="url">-->
+    <!--<input type="text" class="des" value="des">-->
+    <!--<button class="ok">ok</button>-->
+<!--</div>-->
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    //动态创建
+    var str='<div class="hide"></div>\n' +
+        '<div class="alert">\n' +
+        '    <input type="text" class="name" value="name">\n' +
+        '    <input type="text" class="url" value="url">\n' +
+        '    <input type="text" class="des" value="des">\n' +
+        '    <button class="ok">ok</button>\n' +
+        '</div>';
+    // $('.item').click(function () {
+    //     //精准定位是哪个p
+    //     $(this).find($('p')).fadeToggle();
+    // });
+    //因为.item已经绑定了,我们再绑定就不生效了，所以要用事件委托的方式
+    $('.list').on('click','.item',function () {
+        //精准定位是哪个p
+        $(this).find($('p')).slideToggle();
+    });
+    //加号绑定点击事件
+    //这个函数只触发一遍
+    $('.add').one('click',function () {
+        //像百度登录那样，要用就动态创建
+        $('body').append(str);
+    }).click(function () { //这个函数每次都触发
+        //两个弹层都展示出来
+        $('.hide').add('.alert').fadeIn();
+    });
+    //OK绑定点击事件,这边不好使
+    // $('.ok').click(function () {
+    //     //两个弹层都展示出来
+    //     $('.hide').add('.alert').fadeOut();
+    // });
+    //OK绑定点击事件,采用事件委托的方式
+    $('body').on('click','.ok',function () {
+        //取值,name、url、des
+        var name=$('.name').val(),
+            url=$('.url').val(),
+            des=$('.des').val();
+        //两个弹层都展示出来
+        $('.hide').add('.alert').fadeOut();
+        //把取到的值插入到list类中
+        $('.list').append(' <div class="item">\n' +
+            '        <div class="img">\n' +
+            '            <img src="'+url+'" alt="">\n' +
+            '        </div>\n' +
+            '        <h3>'+name+'</h3>\n' +
+            '        <p>'+des+'</p>\n' +
+            '    </div>');
+    });
+</script>
+</body>
+</html>

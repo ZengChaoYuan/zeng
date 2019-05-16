@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/森力logo.jpg" >
+    <title>打地鼠</title>
+    <link rel="stylesheet" href="css/SenLiOneself.css" type="text/css">
+    <link rel="stylesheet" href="css/purifier.css" type="text/css">
+    <link rel="stylesheet" href="css/mouse.css" type="text/css">
+    <script  type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript">
+        //滑动导航
+        $(document).ready(function () {
+            $('#menu,#close-side-nav').click(function (event) {
+                event.preventDefault();
+                $('#main,#side-nav').toggleClass('off-display');
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--页面内容部分-->
+<div id="wrapper">
+    <!--头部-->
+    <div id="main">
+
+        <div class="header">
+
+            <div class="hOne">
+                森力会员平台
+
+            </div>
+
+            <div class="hThree">
+
+                <button onclick="tuichu()" class="hTwoBtn">退出登录</button>
+            </div>
+            <!--退出登录-->
+            <div class="hFour">
+
+                欢迎zjl先生
+            </div>
+
+            <!--更换头像区域-->
+            <div class="hFive" title="更换头像">
+
+                <img class="pic">
+                <input class="upload" name="file" type="file" style="display: none"/>
+
+            </div>
+
+
+        </div>
+
+        <button href="" id="menu">菜单</button>
+        <!--这边是可以改变的地方-->
+        <!--老鼠出现区域-->
+            <div id="changjing">
+                <div class="scorePosi">分数:<input type="text" id="fenshu" readonly></div>
+                <img  id="hammer"  src="image/hammer1.png" alt="">
+                <div id="dong1"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong2"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong3"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong4"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong5"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong6"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong7"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong8"><img src="image/mouse1.png" alt=""></div>
+                <div id="dong9"><img src="image/mouse1.png" alt=""></div>
+            </div>
+    </div>
+    <!--导航部分-->
+
+    <div id="side-nav">
+        <a href="" id="close-side-nav"></a>
+
+        <!--树形菜单-->
+        <li><button class="menuyi" onclick="SenLiOneself()" title="返回平台首页">平台首页</button></li>
+
+        <li class="leftfirstmenu" onclick="showTwoMenu(1)">产品分类</li>
+        <ul id="1" style="display: none">
+            <li class="lefttwomenu"><button class="menu" onclick="purifier()">净化器介绍</button></li>
+            <li class="lefttwomenu"><button class="menu">手机</button></li>
+            <li class="lefttwomenu"><button class="menu">电脑</button></li>
+            <li class="lefttwomenu"><button class="menu">笔记本</button></li>
+            <li class="lefttwomenu"><button class="menu">家电</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(2)">爆款产品</li>
+        <ul id="2" style="display: none">
+            <li class="lefttwomenu"><button class="menu">森力MIX</button></li>
+            <li class="lefttwomenu"><button class="menu">商用净化器</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(3)">关于森力</button></li>
+        <ul id="3" style="display: none">
+            <li class="lefttwomenu"><button class="menu">公司简介</button></li>
+            <li class="lefttwomenu"><button class="menu">从事相关</button></li>
+            <li class="lefttwomenu"><button class="menu" onclick="aboutOur()">关于我们</button></li>
+            <li class="lefttwomenu"><button class="menu">咨询留言</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(4)">下载App</li>
+        <ul id="4" style="display: none">
+            <li class="lefttwomenu"><button class="menu">点此下载</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(5)">联系客服</li>
+        <ul id="5" style="display: none">
+            <li class="lefttwomenu"><button class="menu">客服服务</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(6)">轻松一刻</li>
+        <ul id="6" style="display: none">
+            <li class="lefttwomenu"><button class="menu">打地鼠</button></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script  type="text/javascript">
+    function purifier(){
+        window.location.href="purifier.html";
+    }
+    function aboutOur() {
+        window.location.href="aboutOur.html";
+    }
+    //舞台和锤子
+    var changjing=document.getElementById("changjing");
+    var hammer=document.getElementById("hammer");
+    //在这个场景内鼠标按下改变图片形状
+    changjing.onmousedown=function () {
+        hammer.src="image/hammer2.png";
+    }
+    //在这个场景内鼠标松开改变图片形状
+    changjing.onmouseup=function () {
+        hammer.src="image/hammer1.png";
+    }
+    //在这个场景内锤子随鼠标移动
+    changjing.onmousemove=function (e) {//一一对应
+        var x=e.clientX;
+        var y=e.clientY;
+        hammer.style.top=y+"px";
+        hammer.style.left=x+"px";
+
+    }
+    //鼠标双击的事件
+    changjing.onclick=function (e) {
+       // clientX 事件属性返回当事件被触发时鼠标指针向对于当前页面的水平坐标。
+        var x=e.clientX;
+        var y=e.clientY;
+        //碰撞检测
+        //鼠标的位置 x是不是在矩形x1 x2 x1<x<x2
+        //鼠标的位置 y是不是在矩形y1 y2 y1<y<y2
+        //小老鼠基于父级的边距
+        var x1=mouseAry[mouseID].offsetLeft+dongAry[mouseID].offsetLeft;
+        var x2=x1+mouseAry[mouseID].offsetWidth;
+
+
+        //dong1.offsetTop的坐标加上dong1.offsetHeight洞的高度
+        var y1=mouseAry[mouseID].offsetTop+dongAry[mouseID].offsetTop;
+        var y2=dongAry[mouseID].offsetTop+dongAry[mouseID].offsetHeight;
+
+        //判断洞口的位置
+        if(x>x1+300&&x<x2+300&&y>y1+160&&y<y2+160){
+            mouseAry[mouseID].src="image/mouse2.png";
+            //分数实现累加
+            var fenshu=document.getElementById("fenshu");
+
+            var  score=5;
+            fenshu.value=Number(fenshu.value)+score;
+            if(fenshu.value==100){
+                alert("还不错，继续加油！");
+            }
+        }
+    }
+
+
+    // var dong1=document.getElementById("dong1");
+    // //获取到小老鼠
+    // var mouse1=dong1.getElementsByTagName("img")[0];
+
+    //随机出现老鼠的条件
+    var mouseID=0;
+    var dongAry=[];
+    var mouseAry=[];
+    for(var i=0;i<9;i++){
+        dongAry[i]=document.getElementById("dong"+(i+1));
+        mouseAry[i]=dongAry[i].getElementsByTagName("img")[0];
+    }
+
+    //老鼠一直生成,每两秒产生
+    var mouseLoop=null;
+    var loopTime=10; //小老鼠出现的速度 30快 100慢
+    var beginTop=102;
+    var endTop=0;
+    var nowTop=beginTop;
+    var waitTime=0;
+    var waitMaxTime=1000;
+    setInterval(function () {
+        //保证每次只产生一只老鼠
+        if(mouseLoop==null){
+            //Math.random()*9小数
+            //强制类型转换parseInt
+            mouseID=parseInt(Math.random()*9);
+            //初始化
+            nowTop=beginTop;
+            waitTime=0;
+            mouseLoop= setInterval(mouseShow,loopTime);
+
+        }
+
+    },500);
+
+
+
+    //计时器
+    var mouseLoop= setInterval(mouseShow,loopTime);
+
+
+    // var beginTop=102;
+    // // var endTop=0;
+    // var nowTop=102;
+
+    //老鼠显示
+    function mouseShow() {
+        if(nowTop>endTop){
+            nowTop-=4;
+        }if(nowTop<endTop){
+            nowTop=endTop;
+        }if(nowTop==endTop){
+
+            if(waitTime<waitMaxTime){
+                waitTime+=loopTime;
+            }
+            if(waitTime>=waitMaxTime){
+                //回归初始状态
+                nowTop=beginTop;
+                clearInterval(mouseLoop);
+                //重要 消失掉为null
+                mouseLoop=null;
+                //恢复为老鼠原来的样子
+                mouseAry[mouseID].src="image/mouse1.png";
+
+            }
+
+        }
+
+        mouseAry[mouseID].style.top=nowTop+"px";
+
+    }
+
+
+
+</script>
+<script async="async" type="text/javascript">
+    function SenLiOneself() {
+        window.location.href="SenLiOneself.html";
+    }
+</script>
+<script async="async" type="text/javascript" src="js/SenLiOneself.js"></script>
+</html>

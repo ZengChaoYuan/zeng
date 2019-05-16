@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级城市联动</title>
+</head>
+<body>
+<!--动态的添加select选项-->
+<select name="" id="province">
+
+
+</select>
+<select name="" id="city">
+
+
+</select>
+<select name="" id="district">
+
+
+</select>
+<script  type="text/javascript">
+   var province=document.getElementById("province");
+   // province.options.add(new Option("北京","bj"));
+   var city=document.getElementById("city");
+   var district=document.getElementById("district");
+   var provinceList=[{
+       name:"北京",
+       cityList:[
+           {name:"市辖区",districtList:['东城区','西城区','崇文区','宣武区']},
+           {name:"县",districtList: ['密云县','延云县']}
+       ],
+   },
+       {
+           name:"四川",
+           cityList: [
+               {name:"成都市",districtList:['市辖区','锦江区','青羊区']},
+               {name:"自贡市",districtList: ['市辖区','自流井区','贡井区']}
+               ],
+       }
+       ];
+   for (var i=0; i<provinceList.length;i++){
+       var option=new Option(provinceList[i].name,provinceList[i].name);
+       province.options.add(option);
+   }
+
+   //监听选中的操作
+   province.onchange=changeProvince;
+   //友好性操作
+   changeProvince();
+   function changeProvince() {
+       //选中的值selectedIndex
+       // console.log(province.selectedIndex);
+       //清空option
+       city.options.length=0;
+       var cityAry=provinceList[province.selectedIndex].cityList;
+       for(var i=0;i<cityAry.length;i++){
+           var option=new Option(cityAry[i].name,cityAry[i].name);
+           city.options.add(option);
+       }
+
+   }
+
+   //监听城市选中的操作
+   city.onchange=changeCity;
+   //友好性操作
+   changeCity();
+   function changeCity() {
+       // console.log(this.selectedIndex);
+
+       //清空操作
+       district.options.length=0;
+
+       var districtAry=provinceList[province.selectedIndex].cityList[city.selectedIndex].districtList;
+
+       for (var i=0;i<districtAry.length;i++){
+           var option=new Option(districtAry[i],districtAry[i]);
+           district.options.add(option);
+       }
+
+   }
+
+
+
+   //动态创建city select ->option
+
+
+
+
+
+   //创建元素
+   //  var option=document.createElement("option");
+   //  option.text="上海";
+   //  option.value="sh";
+   //  province.appendChild(option);
+</script>
+</body>
+</html>

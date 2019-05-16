@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上下左右小demo</title>
+    <style>
+        .box{
+            position:absolute;
+            top:200px;
+            left: 300px;
+            width: 100px;
+            height: 100px;
+            background: #ff6677;
+            color: #fff;
+            opacity: 0.5;
+        }
+        .list{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .list button{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 50%;
+            /*轮廓线*/
+            outline: none;
+        }
+        .list .left{
+            top:50%;
+            margin-top: -20px;
+        }
+        .list .top{
+            left:50%;
+            margin-left: -20px;
+        }
+        .list .right{
+            right: 0;
+            top:50%;
+            margin-top: -20px;
+        }
+        .list .bottom{
+            bottom: 0;
+            left:50%;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="list">
+    <button class="left">左</button>
+    <button class="right">右</button>
+    <button class="top">上</button>
+    <button class="bottom">下</button>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    //左
+    $('.left').click(function () {
+        $('.box').stop(true,true).animate({
+            left:'-=100px',
+            width:'-=20px',
+            height:'-=20px'
+        });
+    });
+    //右
+    $('.right').click(function () {
+        $('.box').stop(true,true).animate({
+            left:'+=100px',
+            width:'+=20px',
+            height:'+=20px'
+        });
+    });
+    //上
+    $('.top').click(function () {
+        $('.box').stop(true,true).animate({
+            top:'-=100px',
+            opacity:'+=0.1',
+        });
+    });
+    //左
+    $('.bottom').click(function () {
+        $('.box').stop(true,true).animate({
+            top:'+=100px',
+            opacity:'-=0.1',
+        });
+    });
+</script>
+</body>
+</html>

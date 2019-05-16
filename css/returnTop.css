@@ -1,0 +1,35 @@
+#returnTop{
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    border: solid 1px #cccccc;
+    background: #333;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    padding-top: 30px;
+    font-size: 12px;
+    box-sizing: border-box;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+#returnTop:hover{
+    font-size: 14px;
+}
+#returnTop:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top:-20px;
+    left:8px;
+}
+#returnTop.showtop{
+    opacity: 1;
+}

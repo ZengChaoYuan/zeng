@@ -1,0 +1,33 @@
+.footMenu{
+    height:auto;
+    background: #444444;
+    min-width: 500px;
+}
+.lineOne, .lineTwo, .lineThree{
+    display: block;
+}
+.lineOne li a,.lineTwo li a ,.lineThree li a{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    float: left;
+    color: #999999;
+    font-weight: 500;
+}
+.lineOne li a:hover,.lineTwo li a:hover ,.lineThree li a:hover{
+    cursor: pointer;
+    color: white;
+}
+.lineOne li:nth-child(1) {
+    padding: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 16px;
+    color:#999999;
+}
+.lineOne li:nth-child(1):hover{
+    cursor: auto;
+    color: white;
+}
+
+

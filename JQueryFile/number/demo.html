@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .test{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li class="test">3</li>
+    <li>4</li>
+    <!--<li>5-->
+        <!--<span>span2</span>-->
+    <!--</li>-->
+</ul>
+
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+$('li:eq(1)').css('color','yellow').nextAll().css('color','blue').addBack().click(
+    function () {
+        console.log($(this).text());
+    }
+);
+
+</script>
+</body>
+</html>

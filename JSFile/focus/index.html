@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点图</title>
+
+    <style>
+        /*遇到一直抖动的问题，是括号写错位置的问题*/
+        /*里面div浮动，外面div要清楚浮动*/
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #left{
+            width: 140px;
+            float: left;
+        }
+        #left img{
+            margin-top: 2px;
+            width: 140px;
+            float: left;
+        }
+        #right{
+            width: 440px;
+            float: left;
+            margin-left: 10px;
+        }
+        #right img{
+            width: 440px;
+            display: none;
+        }
+        /*一开始右边的图片都让隐藏，通过id获取show的类名控制显示*/
+        /*没有显示是因为权重问题，下面的优先生效*/
+        #right .show{
+            display: inline-block;
+        }
+
+        /*指针*/
+        #pointer{
+            margin-top: 4px;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .box{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<div class=" box clearfix">
+    <div id="left">
+        <img src="image/1.jpg" alt="">
+        <img src="image/2.jpg" alt="">
+        <img src="image/3.jpg" alt="">
+
+    </div>
+    <img src="image/pointer.png" alt="" id="pointer">
+    <div id="right">
+        <img src="image/1.jpg" alt="" class="show">
+        <img src="image/2.jpg" alt="">
+        <img src="image/3.jpg" alt="">
+    </div>
+
+
+</div>
+<script  type="text/javascript">
+    var leftImgAry=document.getElementById("left").getElementsByTagName("img");
+    var rightImgAry=document.getElementById("right").getElementsByTagName("img");
+    var pointer=document.getElementById("pointer");
+    //目标值
+    var TopAry=[0,82,164];
+
+    //遍历所有图片
+    for(var i=0;i<leftImgAry.length;i++){
+        leftImgAry[i].onmouseover=mouseOver;
+        //存值 判断第几张图片
+        leftImgAry[i].index=i;
+    }
+    function mouseOver() {
+        //this 当前图片
+        for (var i = 0; i < rightImgAry.length; i++) {
+            //鼠标移动怎么切换图片？
+            if (i == this.index) {
+                //忘了加i,不是只有一张图片
+                //右侧图片显示
+                rightImgAry[i].className = "show";
+                //pointer如何移动？
+                Top = TopAry[i];
+                //图片自己有的属性
+                nowTop = pointer.offsetTop;
+                if (moveLoop == null) {
+                    moveLoop = setInterval(moveTo, 10);
+                }
+            } else {
+                rightImgAry[i].className = "";
+            }
+        }
+    }
+        //怎么让红色边框跟着鼠标移动呢，是通过修改top值 pointer.style.top
+        //计时器
+        var moveLoop=null;//setInterval(moveTo,100);
+        var Top=0;
+        var nowTop=164;
+        var speed=2;
+
+        //移动到哪里
+        function moveTo() {
+            if(nowTop<Top){
+                nowTop+=speed;
+                if(nowTop>=Top){
+                    //结束
+                    nowTop=Top;
+                    //清除计时器
+                    clearInterval(moveLoop);
+                    moveLoop=null;
+                }
+            }
+            //从下往上移动
+            if(nowTop>Top){
+                nowTop-=speed;
+                if(nowTop<=Top){
+                    nowTop=Top;
+                    clearInterval(moveLoop);
+                    moveLoop=null;
+                }
+            }
+
+            if(nowTop==Top){
+                clearInterval(moveLoop);
+                moveLoop=null;
+            }
+            //属性 字符串
+            pointer.style.top=nowTop+"px";
+        }
+</script>
+</body>
+</html>

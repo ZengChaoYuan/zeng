@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>columns多列布局</title>
+    <style>
+        body,ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            /*固定宽度是300px*/
+            column-width: 300px;
+            margin: 30px 50px;
+            /*这边的 column-gap:10px;要和li的margin的左右一起设置*/
+            column-gap: 10px;
+        }
+        li{
+            /*转换成行级块元素，一个个排开，但都是靠下，怎么使得靠上排列*/
+            display: inline-block;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            /*把标准模型修改为ie6混杂模型*/
+            box-sizing: border-box;
+            border-radius: 10px;
+            /*上下设置10px是因为上下有margin塌陷的问题*/
+            margin: 10px 5px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <!--li多列排开，所以我们要给它的父级也就是ul设置column,li里面一定要是行级块元素或者块元素设置column才好使-->
+    <li><img src="image/q1.jpg"alt=""></li>
+    <li><img src="image/q2.jpg"alt=""></li>
+    <li><img src="image/q4.jpg"alt=""></li>
+    <li><img src="image/q7.jpg"alt=""></li>
+    <li><img src="image/q8.png"alt=""></li>
+    <li><img src="image/q9.png"alt=""></li>
+    <li><img src="image/q10.jpg"alt=""></li>
+    <li><img src="image/q11.jpg"alt=""></li>
+    <li><img src="image/q12.jpg"alt=""></li>
+    <li><img src="image/q13.jpg"alt=""></li>
+    <li><img src="image/q14.jpg"alt=""></li>
+    <li><img src="image/q15.jpg"alt=""></li>
+</ul>
+</body>
+</html>

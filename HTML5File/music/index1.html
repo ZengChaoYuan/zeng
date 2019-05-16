@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个性化音乐播放器</title>
+    <link rel="icon" href="image/q9.png">
+    <link rel="stylesheet" href="css/index1.css" type="text/css">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+</head>
+<body>
+<div class="all">
+    <!--图片位置-->
+    <div class="main">
+        <img src="image/q9.png" alt="">
+        <audio id="audio" src="source/song.mp3"></audio>
+    </div>
+    <div class="tool">
+        <!--播放和暂停-->
+        <div  class="btn">
+            <i class="iconfont icon-bofang"></i>
+        </div>
+        <!--进度条等消息-->
+        <div class="progress">
+            <!--当前时间-->
+            <div class="current-time"></div>
+            <!--进度条-->
+            <div class="pro-box">
+                <div class="pro-bg"></div>
+                <div class="pro-active">
+                    <div class="radio-box">
+                        <span class="radio"></span>
+                    </div>
+                </div>
+            </div>
+            <!--总时长-->
+            <div class="duration"></div>
+        </div>
+        <!--音量-->
+        <div class="volume">
+            <i class="iconfont icon-laba"></i>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index1.js"></script>
+</body>
+</html>

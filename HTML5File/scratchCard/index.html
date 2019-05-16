@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            background: url("image/q9.png") no-repeat center;
+        }
+    </style>
+</head>
+<body>
+<canvas width="400" height="400" id="myCanvas"></canvas>
+<script>
+    var myCanvas=document.getElementById('myCanvas');
+    var ctx=myCanvas.getContext('2d');
+    var w=myCanvas.width;
+    var h=myCanvas.height;
+    //入口函数,默认效果
+    function init() {
+        //创建图片
+        var img=new Image();
+        //随机产生图片
+        var random=Math.random();
+        if(random<0.5){//设置小于10%的中奖概率
+            img.src='image/q10.jpg';
+        }else{
+            img.src='image/q9.png';
+        }
+        //优化
+        //图片加载完成后才能执行鼠标操作
+        img.onload=function(){
+            myCanvas.style.backgroundImage='url('+img.src+')';
+            //鼠标按下的监听事件
+            myCanvas.addEventListener('mousedown',downFun);
+        }
+        ctx.beginPath();
+        //蒙层
+        ctx.fillStyle='#aaa';
+        ctx.fillRect(0,0,w,h);
+        //擦除
+        ctx.globalCompositeOperation='destination-out';
+    }
+    init();
+    function downFun() {
+        //鼠标移动的监听事件
+        myCanvas.addEventListener('mousemove',moveFun);
+        //鼠标抬起的监听事件
+        document.body.addEventListener('mouseup',upFun);
+    }
+    function moveFun(e) {//e是鼠标
+        var x=e.clientX-myCanvas.offsetLeft;
+        var y=e.clientY-myCanvas.offsetTop;
+        ctx.beginPath();
+        ctx.arc(x,y,20,0,Math.PI*2);
+        ctx.closePath();
+        ctx.fill();
+    }
+    function upFun() {
+        //取消鼠标移动的监听事件
+        myCanvas.removeEventListener('mousemove',moveFun);
+        //取消鼠标抬起的监听事件
+        document.body.removeEventListener('mouseup',upFun);
+        //清除覆盖区域
+        clearCover();
+    }
+    //清除覆盖区域
+    function clearCover(){
+        //获取所有像素
+        var imageData=ctx.getImageData(0,0,w,h);
+        //设置总数为0
+        var sum=0;
+        //data存有所有像素的数组
+        //只判断a,没有必要判断rgba,所以为4
+        for(var i=0;i<imageData.data.length;i+=4){
+            //被擦除的区域为0,累加
+            if(imageData.data[i]==0){
+                sum++;
+            }
+        }
+        if(sum>w*h*0.7){
+            //清除画布所有区域
+            ctx.clearRect(0,0,w,h);
+        }
+    }
+    //画图
+    // var img=new Image();
+    // img.src='image/q9.png';
+    //加载后出现图片
+    // img.onload=function () {
+        //画的图片会被擦除，所以只能用背景图片
+        // var bg=ctx.createPattern(img,'no-repeat');
+        // ctx.fillStyle=bg;
+        // ctx.fillRect(0,0,w,h);
+        //擦除
+        // ctx.globalCompositeOperation='destination-out';
+        // ctx.beginPath();
+        // ctx.arc(100,100,100,0,Math.PI*2);
+        // ctx.fill();
+    // }
+</script>
+</body>
+</html>

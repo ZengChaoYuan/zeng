@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.book{
+    width: 500px;
+    margin: 100px auto 0px;
+    position: relative;
+    /*使得翻页效果更具有透视感*/
+    -webkit-perspective:1500px;
+    perspective: 1500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(10deg);
+    transform: rotateX(10deg);
+}
+.book li{
+    position: absolute;
+    font-size: 18px;
+    width: 500px;
+    height: 400px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.1);
+    /*使得翻转到反面时不显示*/
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.cover{
+   background-color: #666666;
+   z-index: 0;
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px;
+    transform-origin:left center;
+    -webkit-transform-origin: left center;
+}
+.page1{
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ff7d26;
+    left: -500px;
+    z-index: -1;
+    transform: rotateY(180deg);
+    transform-origin: right center;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-origin: right center;
+}
+.page2{
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px;
+    background-color:#87CEEB;
+    z-index: -2;
+}
+
+.book:hover .cover{
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+.book:hover .page1{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}

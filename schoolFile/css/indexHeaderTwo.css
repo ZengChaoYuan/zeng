@@ -1,0 +1,96 @@
+.indexHeaderTwo{
+    width: 80%;
+    height:126px;
+    margin: 0px auto;
+}
+.iHTLeft{
+    width: 23%;
+    height: 126px;
+    float: left;
+}
+.iHTLTu{
+    margin-top: 20px;
+}
+
+.iHTMiddle{
+    width:50%;
+    height: 126px;
+    float: left;
+}
+.iHTMFontTwo{
+    width:8%;
+    height: 126px;
+    line-height: 126px;
+    text-align:center;
+    float: left;
+}
+.iHTMFontTwo:hover{
+    cursor: pointer;
+    color: red;
+}
+.iHTMFontThree{
+    width:9%;
+    height: 126px;
+    line-height: 126px;
+    text-align:center;
+    float: left;
+}
+.iHTMFontThree:hover{
+    cursor: pointer;
+    color: red;
+}
+.iHTMFontFour{
+    width:11%;
+    height: 126px;
+    line-height: 126px;
+    text-align:center;
+    float: left;
+}
+.iHTMFontFour:hover{
+    cursor: pointer;
+    color: red;
+}
+.iHTMFontFive{
+    width:12%;
+    height: 126px;
+    line-height: 126px;
+    text-align:center;
+    float: left;
+}
+.iHTMFontFive:hover{
+    cursor: pointer;
+    color: red;
+}
+.iHTRight{
+    width: 27%;
+    height: 126px;
+    float: left;
+}
+.iHTRKuang{
+    width: 99%;
+    height: 50px;
+    margin-top: 38px;
+    border: 1px solid green;
+    float: right;
+}
+.iHTRKText{
+    width:80%;
+    height: 48px;
+    outline: none;
+    text-indent: 10px;
+    float: left;
+    border: 1px solid white;
+}
+.iHTRKT{
+    width: 61px;
+    height:51px;
+    float: right;
+    text-align: center;
+}
+.iHTRKT:hover{
+    background-color:green;
+    cursor: pointer;
+}
+.iHTRKTU{
+   margin-top:9px;
+}

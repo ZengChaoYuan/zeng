@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取新闻列表</title>
+</head>
+<body>
+姓名：<input type="text">
+年龄：<input type="text">
+<input type="submit" class="btn">
+<button>获取新闻列表</button>
+<ul class="box"></ul>
+<script src="./ajax1.js"></script>
+<script>
+    document.getElementsByClassName('btn')[0].onclick=function () {
+        dom();
+    };
+
+
+    function dom() {
+        //传值进data
+        var input1=document.getElementsByTagName('input')[0];
+        var input2=document.getElementsByTagName('input')[1];
+        var value1=input1.value;
+        var value2=input2.value;
+
+        var str='username='+value1+'&age='+value2;
+
+        console.log(str);
+        ajax('POST','http://www.zjlzcy.cn/AjaxFile/Ajax/post.php',postCbs,str,true);
+    }
+    //按钮点击事件
+    document.getElementsByTagName('button')[0].onclick=function () {
+        ajax('GET','http://www.zjlzcy.cn/AjaxFile/Ajax/getNews.php',getCbs,'',true);
+    }
+
+    function getCbs(val) {
+        var oUl=document.getElementsByClassName('box')[0];
+        //xml.responseText;存储数据
+        console.log(val);
+        var data=JSON.parse(val);
+        var str='';
+        data.forEach(function (ele,index) {
+            console.log(ele);
+            str+='<li>'+ele.title+ele.date+'</li>';
+
+        });
+        oUl.innerHTML=str;
+    }
+
+    function postCbs(data) {
+        console.log(data);
+    }
+</script>
+</body>
+</html>

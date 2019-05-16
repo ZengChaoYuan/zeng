@@ -1,0 +1,43 @@
+.wrapper{
+    width: 77px;
+    height: 25px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.wrapper a{
+    position: absolute;
+    top: 0;
+    width: 17px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #e5e5e5;
+    text-decoration: none;
+    background: #f0f0f0;
+    color: #444;
+}
+.wrapper .prev{
+    left: 0;
+}
+.wrapper .next{
+    right: 0;
+}
+.wrapper .text{
+    width: 39px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #fff;
+    background-position: -75px -375px;
+    position:absolute;
+    z-index:2;
+    left: 18px;
+    top:0;
+}
+.wrapper .min{
+    color:#e5e5e5;
+}

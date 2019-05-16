@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History无刷新历史记录切换</title>
+</head>
+<body>
+<ul>
+    <li><a href="value=news">news</a></li>
+    <li><a href="value=about">about</a></li>
+    <li><a href="value=contact">contact</a></li>
+</ul>
+<p class="content"></p>
+<script src="ajax.js"></script>
+<script>
+    //把类数组转换成数组
+    var oA=Array.prototype.slice.call(document.getElementsByTagName('a'));
+    var oContent=document.getElementsByClassName('content')[0];
+    //默认的url
+    var defaultUrl=location.href;
+    //旧的值
+    var data='';
+    //新的值
+    var lastData='';
+
+    function getContent(data){
+        oContent.innerHTML=data;
+    }
+
+    oA.forEach(function (ele,index) {
+        ele.onclick=function () {
+            //取得href
+            data=this.getAttribute('href');
+            var newUrl=defaultUrl+'?'+data;
+            //用来判断问号后面是不是有参数
+            if(!location.search){//空值
+                history.replaceState({name:data},'',newUrl);
+                ajax('GET','./demo.php',getContent,data,true);
+            }else if(data!=lastData){
+                //为了可以回退
+                history.pushState({name:data},'',newUrl);
+                ajax('GET','./demo.php',getContent,data,true);
+            }
+            lastData=data;
+            return false;
+        }
+    });
+    //要让页面一开始只显示第一个标签
+    oA[0].onclick();
+    //怎么判断是不是回退了呢？
+    window.onpopstate=function (e) {
+        data=e.state.name;
+        lastData=data;
+        ajax('GET','./demo.php',getContent,data,true);
+    }
+</script>
+</body>
+</html>

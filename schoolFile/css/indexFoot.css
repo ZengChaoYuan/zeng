@@ -1,0 +1,158 @@
+.indexFoot{
+    width: 100%;
+    height: auto;
+}
+.iFTop{
+    width: 100%;
+    height:262px;
+    background-color: white;
+}
+.iFTQu{
+    width: 80%;
+    height:262px;
+    margin: 0px auto;
+}
+.iFTQTop{
+    width: 100%;
+    height: 80px;
+    background-color:white;
+}
+.iFTQBot{
+    width: 100%;
+    height: 182px;
+}
+.iFTQBLeft{
+    width: 79%;
+    height:180px;
+    float: left;
+}
+.iFTQBLTZOne{
+    width: 10%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    font-size: 16px;
+}
+.iFTQBLTZ{
+    width: 18%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+}
+.iFTQBLBZOne{
+    width: 10%;
+    height: 30px;
+    line-height:30px;
+    float: left;
+    font-size: 13px;
+
+}
+.iFTQBLBZOne:hover{
+    cursor: pointer;
+    color: orange;
+}
+.iFTQBLBZ{
+    width: 18%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+}
+.iFTQBLBZ:hover{
+    cursor: pointer;
+    color: orange;
+}
+.iFTQBRight{
+    width: 21%;
+    height:180px;
+    text-align: center;
+    float: left;
+}
+.iFTQBRYi{
+
+    color:#ff6700;
+    font-size: 22px;
+    margin-top: 10%;
+    text-align: center;
+}
+.iFTQBREr{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 14px;
+}
+.iFTQBRSi{
+    margin-top: 6%;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    /*border: 1px solid #ff6700;*/
+    background-color: white;
+    color: #ff6700;
+    text-align: center;
+    margin-left: 25%;
+
+}
+.iFTQBRSi:hover{
+    cursor: pointer;
+    color: white;
+    background-color:rgba(242,92,14,1);
+}
+.iFTQTZi{
+    width: 19%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    color: #616161;
+    font-size: 18px;
+    text-align: center;
+}
+.iFTQTZi:hover{
+    color: red;
+    cursor: pointer;
+}
+.iFTQTShu{
+    width: 1%;
+    height: 80px;
+    line-height: 80px;
+    color: #e0e0e0;
+    font-size: 22px;
+    float: left;
+    text-align: center;
+}
+.iFBottom{
+
+    width: 100%;
+    height: 90px;
+    background-color: rgba(250,250,250,1);
+
+}
+.iFBQu{
+    width: 80%;
+    height: 90px;
+    margin: 0px auto;
+}
+.iFBQTop{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 18px;
+}
+
+.iFBQBot{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(250,250,250,1);
+}
+.iFBQBZi{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #bdbdbd;
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快速搭建Bootstrap网页</title>
+    <!--必须一-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/returnTop.css" type="text/css">
+    <script  src="js/returnTop.js"></script>
+</head>
+<body>
+<!--JS交互返回头部默认不显示-->
+<div id="returnTop">返回顶部</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm" href="#">Bootstrap中文网</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--让Bootstrap2中文文档在hidden-md下消失-->
+                    <li class="hidden-md hidden-sm"><a href="#">Bootstrap2中文文档</a></li>
+                    <li><a href="#">Bootstrap3中文文档</a></li>
+                    <li><a href="#">Bootstrap4中文文档</a></li>
+                    <li><a href="#">Less教程</a></li>
+                    <li><a href="#">jQuery API</a></li>
+                    <li><a href="#">网站实例</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-sm"><a href="#">关于</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+<!--巨幕部分-->
+<!--masthead报头的意思-->
+<div class="jumbotron masthead">
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Bootstrap3中文文档(v3.3.7)</a></p>
+        <ul>
+            <li><a href="javascript:;">Bootstrap2中文文档(v2.3.2)</a></li>
+        </ul>
+    </div>
+</div>
+<!--问答社区部分-->
+<div class="bc-social">
+    <div class="bc-container">
+        <ul class="bc-social-buttons">
+            <li class="social-forum">
+                <a class="" href="http://wenda.bootcss.com" title="Bootstrap问答社区" target="_blank" >
+                    <i class="iconfont">&#xe63e;</i> Bootstrap问答社区
+                </a>
+            </li>
+            <li class="social-weibo">
+               <span class="shuxian">|</span>  <a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank"><i class="iconfont">&#xe720;</i>新浪微博：@Bootstrap中文网</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Bootstrap相关优质项目推荐部分-->
+<div class="you-container projects">
+    <div class="projects-header page-header">
+        <h2>Bootstrap相关优质项目推荐</h2>
+        <p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</p>
+    </div>
+</div>
+<!--缩略图部分-->
+<div class="row">
+    <!--居中效果-->
+    <div class="container">
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png" alt="...">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="image/expo.png">
+                <div class="caption">
+                    <h3>优站精选</h3>
+                    <p>Bootstrap 网站实例</p>
+                    <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部部分-->
+<footer class="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-6 col-lg-6">
+                <h4>
+                    <img src="image/logo.png">
+                </h4>
+                <p>我们一直致力于为广大开发者提供更多的优质技术文档和辅助开发工具！</p>
+            </div>
+            <div class="col-md-6  col-lg-5 col-lg-offset-1">
+                <div class="row about">
+                    <div class="col-sm-3">
+                        <h4>关于</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="/about/">关于我们</a></li>
+                            <li><a href="/ad/">广告合作</a></li>
+                            <li><a href="/links/">友情链接</a></li>
+                            <li><a href="/hr/">招聘</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>联系方式</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a></li>
+                            <li><a href="mailto:admin@bootcss.com">电子邮件</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>旗下网站</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="http://www.golaravel.com/" target="_blank">Laravel中文网</a></li>
+                            <li><a href="http://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+                            <li><a href="http://www.bootcdn.cn/" target="_blank">BootCDN</a></li>
+                            <li><a href="https://pkg.phpcomposer.com/" target="_blank">Packagist中国镜像</a></li>
+                            <li><a href="https://www.return.net/" target="_blank">燃腾教育</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>赞助商</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="http://www.maoyun.tv/" target="_blank">猫云</a></li>
+                            <li><a href="https://www.jdcloud.com/" target="_blank">京东云</a></li>
+                            <li><a href="https://www.upyun.com" target="_blank">又拍云</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
+        <div class="row footer-bottom">
+            <ul class="list-inline text-center">
+                <li><a href="http://www.miibeian.gov.cn/" target="_blank" class="jing">京ICP备11008151号</a></li><span class="shuxian">|</span><li>  京公网安备11010802014853</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--必须二-->
+<script  src="jquery.js"></script>
+<!--必须三-->
+<script  src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</body>
+</html>

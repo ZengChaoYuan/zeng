@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3选项卡</title>
+    <style>
+       /*利用input中的check选中属性*/
+        body,input{
+            margin: 0px;
+        }
+        .wrapper{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            text-align: center;
+        }
+        /*input是行级块元素可以text-align: center;*/
+        input{
+            width: 30px;
+            height: 30px;
+        }
+        .wrapper div{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 400px;
+            height: 370px;
+            text-align: center;
+            line-height: 370px;
+        }
+        input:checked+div{
+            display: block;
+        }
+        /*可以用check判断选中状态*/
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <input type="radio"name="tab" checked>
+    <div class="cc">cc</div>
+    <input type="radio"name="tab">
+    <div class="aimee">aimee</div>
+    <input type="radio"name="tab">
+    <div class="luwei">luwei</div>
+</div>
+<!--label元素和input元素相绑定-->
+<input type="radio" id="hot">
+<div for="hot">
+    <label for="hot">点击触发</label>
+    </div>
+</body>
+</html>

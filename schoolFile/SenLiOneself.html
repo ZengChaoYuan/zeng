@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/森力logo.jpg" >
+    <title>森力会员平台</title>
+    <link rel="stylesheet" href="css/SenLiOneself.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+</head>
+<body>
+<!--页面内容部分-->
+<div id="wrapper">
+    <!--头部-->
+    <div id="main">
+
+        <div class="header">
+
+            <div class="hOne">
+                森力会员平台
+
+            </div>
+
+            <div class="hThree">
+
+                <button onclick="tuichu()" class="hTwoBtn">退出登录</button>
+            </div>
+            <!--退出登录-->
+            <div class="hFour">
+
+               欢迎zjl先生
+            </div>
+
+            <!--更换头像区域-->
+            <div class="hFive" title="更换头像">
+
+                <img class="pic">
+                <input class="upload" name="file" type="file" style="display: none"/>
+
+            </div>
+
+
+        </div>
+
+            <button href="" id="menu">菜单</button>
+        <!--这边是可以改变的地方-->
+        <!--新闻资讯-->
+        <div class="xinwen">
+
+            <div class="xinwentop">热点资讯</div>
+
+            <div class="xinwenbot">
+                <p class="shijian">当前时间：<span id="show"></span></p>
+                <p class="gundong"><marquee>在12306平台登记购票信息支付预购票资金后，如有退票、余票，12306系统将自动为其购票，无论是购票速度还是成功率都将领先于抢票软件。</marquee></p>
+                <p class="neirong">1.詹姆斯22+8布克伤退 湖人射日喜迎三连胜&emsp;&emsp;<a class="xiangqing">详情</a></p>
+
+                <p class="neirong">2.哈登29+8保罗低迷 火箭客场遭森林狼逆转</p>
+
+                <p class="neirong">3.约基奇三双小卡27+8 掘金险胜猛龙六连胜</p>
+
+                <p class="neirong">4.曝多支球队现将阿里扎视为头号追求目标</p>
+
+                <p class="neirong">5.四川夹江一公交车爆炸 已致17人受伤无人员死亡</p>
+
+                <p class="neirong">6.乐清“走失”男孩的母亲被警方控制 全家已连夜搬家</p>
+
+                <p class="neirong">7.黄毅清回应薛之谦否认吸毒一事：事实真相只有自己心里清楚</p>
+
+                <p class="neirong">8.白边23+20韦德罚球准绝杀 热火主场胜爵士</p>
+
+                <p class="neirong">9.威少18+6+6格里芬20分 雷霆拔塞迎三连胜</p>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--导航部分-->
+
+    <div id="side-nav">
+    <a href="" id="close-side-nav"></a>
+
+        <!--树形菜单-->
+        <li class="leftfirstmenu" onclick="showTwoMenu(1)">产品分类</li>
+        <ul id="1" style="display: none">
+            <li class="lefttwomenu"><button class="menu" onclick="purifier()">净化器介绍</button></li>
+            <li class="lefttwomenu"><button class="menu">手机</button></li>
+            <li class="lefttwomenu"><button class="menu">电脑</button></li>
+            <li class="lefttwomenu"><button class="menu">笔记本</button></li>
+            <li class="lefttwomenu"><button class="menu">家电</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(2)">爆款产品</li>
+        <ul id="2" style="display: none">
+            <li class="lefttwomenu"><button class="menu">森力MIX</button></li>
+            <li class="lefttwomenu"><button class="menu">商用净化器</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(3)">关于森力</button></li>
+        <ul id="3" style="display: none">
+            <li class="lefttwomenu"><button class="menu">公司简介</button></li>
+            <li class="lefttwomenu"><button class="menu">从事相关</button></li>
+            <li class="lefttwomenu"><button class="menu" onclick="aboutOur()">关于我们</button></li>
+            <li class="lefttwomenu"><button class="menu">咨询留言</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(4)">下载App</li>
+        <ul id="4" style="display: none">
+            <li class="lefttwomenu"><button class="menu">点此下载</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(5)">联系客服</li>
+        <ul id="5" style="display: none">
+            <li class="lefttwomenu"><button class="menu">客服服务</button></li>
+        </ul>
+        <li class="leftfirstmenu" onclick="showTwoMenu(6)">轻松一刻</li>
+        <ul id="6" style="display: none">
+            <li class="lefttwomenu"><button class="menu"onclick="hitmouse()">打地鼠</button></li>
+        </ul>
+    </div>
+</div>
+
+<!--弹出图层内容-->
+<div id="popup">
+
+    <div id="popup-content">
+
+        <h1>详情页</h1>
+
+        <br>
+        <p>&emsp;&emsp;詹姆斯首节前9分钟状态糟糕，但是在湖人落后17分时也是詹姆斯率先发力帮湖人缩小分差。第二节后半段湖人拉开比分靠的是詹姆斯的进攻和传球。包括第三节湖人早早奠定胜局，詹姆斯也发挥了关键作用，他唯一的瑕疵就是首节失误太多了。</p>
+        <br>
+        <p>&emsp;&emsp;末节比赛已经没有任何悬念，前两分钟完全成了比斯利的个人表演秀，他疯狂进攻连拿7分，湖人102-74领先达到28分。剩下的比赛进入垃圾时间，湖人一度领先到33分，最终湖人在主场实现17分逆转，大胜太阳拿下3连胜。</p>
+
+        <br>
+        <button id="close">关 闭</button>
+    </div>
+    <div id="popup-bg">
+
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+<script type="text/javascript">
+    function purifier(){
+        window.location.href="purifier.html";
+
+    }
+    function aboutOur() {
+        window.location.href="aboutOur.html";
+    }
+
+    function hitmouse() {
+        var confirm=window.confirm("尊贵的会员,接下来让我们轻松一下");
+        if(confirm){
+            window.location.href="mouse.html";
+        }else{
+
+        }
+    }
+</script>
+<script type="text/javascript" src="js/SenLiOneself.js"></script>
+</html>

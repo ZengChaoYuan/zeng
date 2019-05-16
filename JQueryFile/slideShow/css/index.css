@@ -1,0 +1,86 @@
+body,ul,li,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*解除浏览器默认字体大小宽度*/
+    font-size: 0;
+}
+.wrapper{
+    position: relative;
+    width: 520px;
+    height: 280px;
+    margin: 100px auto;
+    border: 5px solid #000;
+    /*只想看到黑色里面*/
+    overflow: hidden;
+}
+.img-box{
+    width: 3120px;
+    height: 280px;
+    /*整个样式向左移动需要*/
+    position: absolute;
+    left: 0;
+}
+.img-box li{
+    /*横过来*/
+    display: inline-block;
+}
+
+/*左右按钮*/
+.btn{
+    position:absolute;
+    top:50%;
+    /*这样写会挡住图片，所以应该设置子元素top:-20px;*/
+    /*margin-top:-20px;*/
+    /*没设置宽度,靠左靠右就会出现问题*/
+    width: 100%;
+}
+.btn a{
+    position: absolute;
+    /**/
+    top:-20px;
+    width: 15px;
+    height: 24px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 16px;
+}
+.btn .prevBtn{
+    left: 0;
+
+}
+.btn .nextBtn{
+    right: 0;
+
+}
+/*小圆点*/
+.order{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+/*ul居中两步走:
+ul display: inline-block;
+父元素text-align: center;*/
+.order ul{
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    border-radius: 7px;
+}
+
+.order ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /*圆点空隙*/
+    margin: 2px;
+    background: #fff;
+}
+/*橘黄色效果,注意权重*/
+.order  .active{
+    background: #ff5000;
+}

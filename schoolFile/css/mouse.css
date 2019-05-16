@@ -1,0 +1,82 @@
+
+#changjing{
+    width: 750px;
+    height: 550px;
+    margin-left:300px;
+    background: url("../image/bg1.png");
+    position: relative;
+    cursor: none;
+}
+#hammer{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -340px;
+    top:0;
+    left: 0;
+    cursor: none;
+    /*用户选中的状态取消掉*/
+    user-select: none;
+    z-index: 999;
+}
+div[id^="dong"]{
+    /*border: 1px solid black;*/
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    overflow: hidden;
+}
+#dong1{
+    top: 165px;
+    left: 140px;
+}
+#dong2{
+    top: 165px;
+    left: 330px;
+}
+#dong3{
+    top: 165px;
+    left: 528px;
+}
+#dong4{
+    top: 250px;
+    left: 117px;
+}
+#dong5{
+    top: 250px;
+    left: 334px;
+}
+#dong6{
+    top: 250px;
+    left: 533px;
+}
+#dong7{
+    top: 345px;
+    left: 110px;
+}
+#dong8{
+    top: 350px;
+    left: 334px;
+}
+#dong9{
+    top: 350px;
+    left: 550px;
+}
+
+div[id^="dong"] img{
+    position: absolute;
+    top: 102px;
+    left: 0px;
+}
+.scorePosi{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 180px;
+    margin-left: 150px;
+    position: absolute;
+}
+#fenshu{
+    width: 60px;
+}
+
+

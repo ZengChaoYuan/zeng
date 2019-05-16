@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            margin: 20px;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            background: #ccc;
+            line-height: 40px;
+            color: #fff;
+        }
+        .remove{
+            width: 300px;
+            height: 300px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="item1" draggable="true">列表1</li>
+    <li class="item2" draggable="true">列表2</li>
+    <li class="item3" draggable="true">列表3</li>
+    <li class="item4" draggable="true">列表4</li>
+    <li class="item5" draggable="true">列表5</li>
+</ul>
+<div class="remove">删除列表</div>
+<script>
+    var li=document.getElementsByTagName('li');
+    var remove=document.getElementsByClassName('remove')[0];
+    len=li.length;
+    //绑定事件
+    function bindLiEvent() {
+
+        for(var i=0;i<len;i++){
+            //怎么解决绑定完i为5的情况呢?
+            (function (j) {
+                li[j].addEventListener('dragstart',function (e) {
+                    var dt=e.dataTransfer;
+                    dt.setData('data',j);
+                })
+            })(i);
+
+        }
+    }
+    function bindRemoveEvent(){
+        remove.addEventListener('drop',function (e) {
+            var dt=e.dataTransfer;
+            var index=dt.getData('data');
+            console.log(index);
+            li[index].remove();
+        });
+
+        remove.addEventListener('dragover',function (e) {
+          e.preventDefault();
+        });
+
+    }
+    bindLiEvent();
+    bindRemoveEvent();
+</script>
+</body>
+</html>

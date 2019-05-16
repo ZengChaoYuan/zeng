@@ -1,0 +1,177 @@
+.iLBTBottom{
+    width: 80%;
+    height:240px;
+    margin: 0px auto;
+    position: relative;
+}
+.iLBTBMiddle{
+    width: 100%;
+    height: 180px;
+    margin: 20px auto 0px;
+    position: absolute;
+}
+.iLBTBMOne{
+    width: 22%;
+    height: 180px;
+    background-color:rgba(95,87,80,0.9);
+    float: left;
+}
+
+.iLBTBMOLR{
+    width: 33%;
+    height: 90px;
+    float: left;
+
+}
+
+
+.iLBTBMOLRZi:hover {
+     cursor: pointer;
+    color: white;
+}
+.iLBTBMOLRTu{
+    margin-top: 15px;
+    text-align: center;
+}
+.iLBTBMOLRTuF{
+    margin-top: 22px;
+    text-align: center;
+}
+.iLBTBMOLRZi{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 12px;
+    color: #cfcdcb;
+}
+
+.iLBTBMOM{
+    width: 34%;
+    height: 90px;
+    float: left;
+}
+/*遮罩交互效果一*/
+.iLBTBMTwo{
+    width:24%;
+    height: 180px;
+    background-image: url("../image/6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.zheZhaoYi{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    background:rgba(0,0,0,0.3);
+    top: 180px;
+    transition: all 0.5s ease-in 0s;
+}
+.iLBTBMTwo:hover .zheZhaoYi{
+    position: absolute;
+    top: 0px;
+
+}
+
+.zztop{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+    color: white;
+    font-size: 20px;
+}
+.zzbot{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+}
+.zzbz{
+    width: 40%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #666;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    margin-left: 30%;
+}
+.zzbz:hover{
+
+    color: red;
+    background-color:white;
+    cursor: pointer;
+}
+
+/*遮罩交互效果二*/
+.iLBTBMThree{
+    width:24%;
+    height: 180px;
+    background-image:url("../image/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2%;
+    float: left;
+    position:relative;
+    overflow: hidden;
+}
+.zheZhaoEr{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    background:rgba(0,0,0,0.3);
+    top:180px;
+    transition: all 0.5s ease-in 0s;
+}
+.iLBTBMThree:hover .zheZhaoEr{
+    position: absolute;
+    top: 0px;
+}
+
+
+
+
+.iLBTBMFour{
+    width:24%;
+    height: 180px;
+    background-image:url("../image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.zheZhaoSan{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    background:rgba(0,0,0,0.3);
+    top: 180px;
+    transition: all 0.5s ease-in 0s;
+    position: absolute;
+}
+.iLBTBMFour:hover .zheZhaoSan{
+    position: absolute;
+    top: 0px;
+}
+
+.zheZhaoSi{
+
+    width: 305px;
+    height: 320px;
+    background-color: rgba(0,0,0,0.3);
+    top: -320px;
+    position: absolute;
+
+}
+.iXMSGBOne:hover .zhezhaoSi{
+    position: absolute;
+    top: 0px;
+}
+
+

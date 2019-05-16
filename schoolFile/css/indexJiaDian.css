@@ -1,0 +1,283 @@
+.iJiaDian{
+    width: 100%;
+    height: 660px;
+    background-color: rgba(245,245,245,1);
+}
+.iJDTop{
+    width: 80%;
+    height: 80px;
+    margin: 0px 10%;
+    clear: both;
+}
+.iJDTLeft{
+    width:10%;
+    height:80px;
+    float: left;
+}
+.iJDTLZi{
+    margin-top: 30px;
+    font-size: 24px;
+}
+.iJDTRight{
+    width: 25%;
+    height: 80px;
+    float: right;
+    /*background-color:orange;*/
+}
+
+.iJDTRZiFour{
+    margin-top: 35px;
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.iJDTRZiFour:hover{
+    cursor: pointer;
+    color: red;
+}
+/*家电区域图片区域*/
+.iJDBotttom{
+    width: 80%;
+    height: 580px;
+    margin: 0px 10%;
+    /*background-color: olive;*/
+}
+.iJDBOne{
+    width: 20%;
+    height:285px;
+    float: left;
+    background-image:url("../image/d4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.iJDBOM{
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+}
+
+
+
+.iJDBOB{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+
+
+}
+.iJDBOne:hover .iJDBOB{
+    position: absolute;
+    top: 0px;
+}
+.iJDBTwo{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iJDBTwobj{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+}
+.iJDBTwo:hover .iJDBTwobj{
+    position: absolute;
+    top: 0px;
+}
+
+
+.zZStoperimg{
+    margin: 15% auto;
+
+    position: absolute;
+}
+.swgmer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+
+.iJDBThree{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.iJDBThreebj{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+}
+.iJDBThree:hover .iJDBThreebj{
+    position: absolute;
+    top: 0px;
+}
+
+.iJDBFour{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.iJDBFourbj{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+}
+.iJDBFour:hover .iJDBFourbj{
+    position: absolute;
+    top: 0px;
+}
+
+.iJDBFive{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.iJDBFivebj{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+}
+.iJDBFive:hover .iJDBFivebj{
+    position: absolute;
+    top: 0px;
+}
+
+.iJDBSix{
+    width: 20%;
+    height:285px;
+    float: left;
+    margin-top: 10px;
+    background-image:url("../image/d3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*后面都用这段，还以为是冗余呢*/
+.iJDBSixbj{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: -285px;
+
+}
+.iJDBSix:hover .iJDBOB{
+    position: absolute;
+    top: 0px;
+}
+
+.iJDBSeven{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/16.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iJDBSeven:hover .iJDBSixbj{
+    position: absolute;
+    top: 0px;
+}
+.iJDBeight{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iJDBeight:hover .iJDBSixbj{
+    position: absolute;
+    top: 0px;
+}
+.iJDBnine{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-image:url("../image/10.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iJDBnine:hover .iJDBSixbj{
+    position: absolute;
+    top: 0px;
+}
+.iJDBten{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background:url("../image/15.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iJDBten:hover .iJDBSixbj{
+    position: absolute;
+    top: 0px;
+}
+

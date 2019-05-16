@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现音量加减功能</title>
+</head>
+<body>
+<audio id="myAudio" src="source/song.mp3" controls autoplay loop preload='metatata'></audio>
+<button id="current">currentTime</button>
+<button id="lessVolume">-</button>
+<button id="addVolume">+</button>
+<button id="kuaijin">快进</button>
+<button id="kuaitui">快退</button>
+<button id="pre">上一首</button>
+<button id="next">下一首</button>
+
+<script>
+    var myAudio=document.getElementById('myAudio');
+    var current=document.getElementById('current');
+    var lessVolume=document.getElementById('lessVolume');
+    var addVolume=document.getElementById('addVolume');
+    var kuaijin=document.getElementById('kuaijin');
+    var kuaitui=document.getElementById('kuaitui');
+    var pre=document.getElementById('pre');
+    var next=document.getElementById('next');
+    //上一首
+    pre.onclick=function(){
+        myAudio.src='./source/song.mp3';
+        myAudio.load();
+    }
+    //下一首
+    next.onclick=function(){
+        myAudio.src='./source/song.mp3';
+        myAudio.load();
+    }
+    //快进
+    kuaijin.onclick=function(){
+        myAudio.playbackRate+=0.1;
+    }
+    //快退
+    kuaitui.onclick=function(){
+        myAudio.playbackRate-=0.1;
+    }
+    //当前
+    current.onclick=function () {
+        console.log(myAudio.currentTime);
+        console.log(myAudio.volume);
+    }
+    console.log(myAudio.volume);
+    //音量减小
+    lessVolume.onclick=function () {
+        var volume=Math.round((myAudio.volume-0.1)*10)/10;
+        if(volume==0.3){
+            myAudio.volume=0.2;
+        }
+        if(volume>=0&&volume<=1){
+            myAudio.volume=volume;
+        }
+        console.log(myAudio.volume);
+    }
+    //音量加大
+    addVolume.onclick=function () {
+
+        var volume=Math.round((myAudio.volume+0.1)*10)/10;
+        if(volume>=0&&volume<=1){
+            myAudio.volume=volume;
+        }
+        console.log(myAudio.volume);
+    }
+    myAudio.onended=function () {
+        console.log('结束了');
+    }
+
+</script>
+
+</body>
+</html>

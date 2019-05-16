@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script  src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script  src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script  type="text/javascript">
+        function fasong() {
+            alert("发送短信！");
+        }
+
+    </script>
+    <style type="text/css"> /**/
+    /*头部*/
+    .htitle{
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-size:40px;
+    }
+
+    .kuangyi{
+        width: 80%;
+        height: 60px;
+        line-height: 60px;
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+    .zhtext{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+    /*第二页-注册*/
+    .htitleer{
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size:22px;
+    }
+
+    .shurukuanger{
+        width: 100%;
+        height: 300px;
+    }
+
+    .shurukuangsan{
+        width: 100%;
+        height: 150px;
+    }
+    .btn4kuang{
+        width: 33%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        float: right;
+    }
+
+    .yanzheng{
+        width: 65%;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+    }
+    .yanzhengma{
+        height: 50px;
+        line-height: 50px;
+    }
+    .xuanze{
+        width: 33%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        font-size: 22px;
+    }
+
+    .woshi{
+        width: 65%;
+        float:right;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    /*确认并登录按钮*/
+    #btn3{
+        background-color:#009999;
+        color: white;
+    }
+
+
+    </style>
+</head>
+<body>
+<!--第二张页面-->
+<div data-role="page">
+    <div data-role="header">
+        <div class="htitle">
+            森力净化商城注册
+        </div>
+        <div class="htitleer">
+            请输入您的信息并选择身份
+        </div>
+    </div>
+    <div data-role="content">
+
+        <div class="shurukuanger">
+
+            <div class="kuangyi">
+
+
+                <input class="zhtext" type="text" placeholder="请输入您的账号/邮箱" id="zhanghao">
+
+            </div>
+            <div class="kuangyi">
+
+
+                <input class="zhtext" type="password" placeholder="请输入密码" id="password">
+
+            </div>
+            <div class="kuangyi">
+
+
+                <input class="zhtext" type="password" placeholder="请确认密码" id="repassword">
+
+            </div>
+            <div class="kuangyi">
+
+
+                <input class="zhtext" type="tel" placeholder="请输入您的手机号" id="tel">
+
+            </div>
+        </div>
+
+        <div class="shurukuangsan">
+            <div class="kuangyi">
+
+
+                <div class="yanzheng">
+                    <input  class="yanzhengma" type="text" placeholder="短信验证码" id="duanxin">
+                </div>
+                <div class="btn4kuang">
+                    <a href="#" data-role="button" onclick="fasong()">发送验证码</a>
+                </div>
+
+
+            </div>
+            <div class="kuangyi">
+
+
+                <div class="xuanze">
+                    <b>选择身份</b>
+                </div>
+                <div class="woshi">
+
+                    <select name="select1" id="select1" data-mini="true">
+                        <option><b>我是管理员</b></option>
+                        <option><b>我是员工</b></option>
+                        <option><b>我是顾客</b></option>
+
+                    </select>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <a data-icon="back" data-iconpos="left" data-role="button" id="btn3" onclick="shouye()">确认并返回登录</a>
+    </div>
+
+</div>
+<script type="text/javascript">
+    function shouye() {
+            window.location.href="telIndex.html";
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+
+}
+.aSLmain{
+    width: 100%;
+    height: 2750px;
+    background:#F1F1F1;
+}
+/*菜单位置*/
+.menu{
+    width:100px;
+    background:white;
+    border:1px solid #F4F4F4;
+    text-align:center;
+    position:fixed;
+    left:50px;
+    top:30%;
+}
+.menu li {
+    line-height:35px;
+    cursor:pointer;
+    font-size: 18px;
+}
+/*内容位置*/
+.content {
+    width: 80%;
+    position:absolute;
+    margin-left: 10%;
+}
+.kongbai{
+    width:100%;
+    height:50px;
+
+}
+.One{
+    width:100%;
+    height:600px;
+}
+.jiaoDian{
+    width:100%;
+    height:530px;
+}
+.onetop , .jiaoDiantop{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #009999;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
+.onebot{
+    width: 100%;
+    height: 550px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+}
+.jiaoDianbot{
+    width: 100%;
+    height: 480px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+}
+
+
+.zitiyi{
+    padding-top: 14px;
+    font-size: 24px;
+    color: #333;
+}
+.Two{
+    width:100%;
+    height:500px;
+    color:white;
+    font-size:30px;
+
+}
+.twobot{
+    width: 100%;
+    height: 450px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+}
+.zitier{
+    padding-top: 17px;
+    font-size: 24px;
+    color: #333;
+}
+
+.Three{
+    width:100%;
+    height:370px;
+    color:white;
+    font-size:30px;
+}
+
+.threebot{
+    width: 100%;
+    height: 320px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    position:relative;
+}
+
+.zitisan{
+    text-indent: 40px;
+    padding-top: 17px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+/*4*/
+.Four{
+    width:100%;
+    height:450px;
+    color:white;
+    font-size:30px;
+}
+.Fourbot{
+    width: 100%;
+    height: 400px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    position: relative;
+}
+
+.zitisi{
+    width: 100%;
+    text-indent: 30%;
+    padding-top: 17px;
+    font-size: 24px;
+    color: #333;
+}
+.liuyanbtn{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    margin-left: 110px;
+    outline: none;
+    border: 0px;
+}
+/*选中赋上样式*/
+.active{
+    background: #009999;
+    color: white;
+}
+
+.lianxi{
+    width: 98%;
+    height: 98%;
+    background-color: white;
+    border: 1px solid red;
+    outline: none;
+}
+.lianxi:hover{
+    background-color: red;
+    color: white;
+}
+/*返回头部样式*/
+
+#returnTop{
+    width:100px;
+    background:white;
+    border:1px solid #F4F4F4;
+    text-align:center;
+    position:fixed;
+    left:50px;
+    top:59%;
+    font-size: 18px;
+    opacity: 0;
+    line-height:35px;
+    cursor:pointer;
+}
+
+#returnTop.showtop{
+    opacity: 1;
+}
+
+/*咨询留言*/
+.name{
+    width: 200px;
+    height: 30px;
+    outline: none;
+}
+.area{
+    width: 204px;
+    height: 100px;
+    outline: none;
+}

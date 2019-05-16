@@ -1,0 +1,98 @@
+.iTel{
+    width: 100%;
+    height: 660px;
+    background-color: rgba(245,245,245,1);
+
+}
+.iTelTop{
+    width: 80%;
+    height: 80px;
+    margin: 0px 10%;
+    clear: both;
+}
+.iTelTopLeft{
+    width:10%;
+    height:80px;
+    float: left;
+
+}
+.iTTLZi{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.iTelTopRight{
+    width: 20%;
+    height: 80px;
+    float: right;
+}
+.iTTRZi{
+    margin-top: 35px;
+    font-size: 16px;
+    float: right;
+}
+.iTTRZi:hover{
+    color:rgba(255,103,0,1);
+    cursor: pointer;
+}
+.iTelBottom{
+    width: 80%;
+    height: 580px;
+    margin: 0px 10%;
+    /*background-color: olive;*/
+}
+.iTBOne{
+    width: 20%;
+    height:580px;
+    float: left;
+    background-image: url("../image/senliMix.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.iTBTwo{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-color: white;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iTBTwobj{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(255,103,0,1);
+    position: absolute;
+    top: -50px;
+    transition: all 0.5s ease-in 0s;
+
+}
+.iTBTwo:hover .iTBTwobj{
+    position: absolute;
+    top: 0px;
+}
+
+.iTBThree{
+    width: 19%;
+    height: 285px;
+    font-size: 24px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.iTBThreebj{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(255,103,0,1);
+    position: absolute;
+    top: -60px;
+    transition: all 0.5s ease-in 0s;
+}
+.iTBThree:hover .iTBThreebj{
+    position: absolute;
+    top: 0px;
+}

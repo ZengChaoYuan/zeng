@@ -1,0 +1,60 @@
+#returnTop{
+    width: 60px;
+    height: 60px;
+    border: solid 1px #cccccc;
+    background: #333;
+    text-align: center;
+    color: white;
+    position: fixed;
+    padding-top: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+#returnTop:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top:-20px;
+    left:8px;
+}
+#returnTop.showtop{
+    opacity: 1;
+}
+
+
+/*固定顶部菜单*/
+#fixtop{
+    width: 100%;
+    height: 40px;
+    background-color: peru;
+    margin-top: -60px;
+    opacity: 0;
+    position: fixed;
+}
+
+#fixtop.show{
+    opacity: 1;
+    z-index: 15;
+}
+
+
+
+.lianxi{
+    width: 98%;
+    height: 98%;
+    background-color: white;
+    border: 1px solid red;
+    outline: none;
+}
+.lianxi:hover{
+    background-color: red;
+    color: white;
+}

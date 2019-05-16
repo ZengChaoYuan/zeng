@@ -1,0 +1,175 @@
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+/*主体区域*/
+.detailBody{
+    position: relative;
+    width: 100%;
+    height: 1600px;
+    background-color: rgba(250,250,250,1);
+    /*background:yellowgreen;*/
+}
+/*主体区域上半部分*/
+.dbTop{
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+    height:410px;
+    /*background-color: #009999;*/
+}
+.dbTopPosition{
+    width: 80%;
+    height: 100%;
+    margin: 0px 150px;
+}
+
+/*文字区域*/
+.dbTopfont{
+    width: 65%;
+    height: 100%;
+    float: right;
+}
+
+
+
+/*主体下半部分*/
+.dbBot{
+    position: absolute;
+    width: 60%;
+    height: 1000px;
+    /*background-color: #009999;*/
+    margin: 500px 20% 0px;
+    /*border: 2px solid #ccc;*/
+}
+
+
+.canshubiao{
+    width: 100%;
+    height: 230px;
+    /*background-color:white;*/
+}
+.cs{
+    text-indent: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    color: #666;
+}
+.canshu{
+    width: 33%;
+    text-indent: 20px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    float: left;
+    color: #666;
+}
+
+.dbBOne{
+    width: 100%;
+    height: 310px;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.dbBTwo{
+    width: 100%;
+    height: 300px;
+    /*background-color: #ff6700;*/
+    position: relative;
+}
+.dbBTwoyi{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 55px;
+    position: absolute;
+}
+.dbBTwoyis{
+    color: rgba(34,106,167,1);
+    font-size: 65px;
+}
+.dbBTwoer{
+    width: 100%;
+    text-align: center;
+    margin-top: 180px;
+    font-size: 40px;
+    position: absolute;
+}
+.dbBTwosan{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    position: absolute;
+    color: #216cab;
+}
+.dbBTwosi{
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+    font-size: 40px;
+    position: absolute;
+    color: #216cab;
+}
+/*33*/
+.dbBThree{
+    width: 100%;
+    height:400px;
+    background:url("../image/wumai.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+   border-radius: 30px;
+}
+
+/*联系区域*/
+.lianxi{
+    width: 98%;
+    height: 98%;
+    background-color: white;
+    border: 1px solid red;
+    outline: none;
+}
+.lianxi:hover{
+    background-color: red;
+    color: white;
+}
+/*返回头部*/
+#returnTop{
+    width: 60px;
+    height: 60px;
+    border: solid 1px #cccccc;
+    background: #333;
+    text-align: center;
+    color: white;
+    position: fixed;
+    padding-top: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+#returnTop:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top:-20px;
+    left:8px;
+}
+#returnTop.showtop{
+    opacity: 1;
+}

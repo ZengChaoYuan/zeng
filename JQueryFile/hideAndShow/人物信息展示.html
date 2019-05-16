@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .list{
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+        }
+        .item{
+            width: 300px;
+            padding: 20px 0;
+            border-radius: 10px;
+            background: #bbb;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .item .img{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+            overflow: hidden;
+            vertical-align: middle;
+            background-color: #000;
+        }
+        .item img{
+            width: 100%;
+            height: 100%;
+        }
+        .item h3{
+            display: inline-block;
+            margin: 0 0 0 20px;
+            vertical-align: middle;
+        }
+        .item p{
+            display: none;
+            margin: 20px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<div class="list">
+    <div class="item">
+        <div class="img">
+            <img src="image/1.png" alt="">
+        </div>
+        <h3>Aimee</h3>
+        <p>前端讲师Aimee,唱歌跳舞打游戏,听歌读书敲代码</p>
+    </div>
+</div>
+<script  src="js/jquery-3.3.1.js"></script>
+<script>
+    $('.item').click(function () {
+        //精准定位是哪个p
+        $(this).find($('p')).fadeToggle(1000,function () {
+            console.log('end');
+        });
+    });
+</script>
+</body>
+</html>

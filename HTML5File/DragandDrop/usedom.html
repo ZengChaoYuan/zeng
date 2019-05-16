@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>usedom</title>
+    <style>
+        /*拖拽元素*/
+        .drag,.drag2{
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+        /*目标元素*/
+        .target{
+            position: absolute;
+            right: 0;
+            top:0;
+            width: 300px;
+            height: 300px;
+            border: 1px dashed #000;
+        }
+    </style>
+</head>
+<body>
+<div class="drag" draggable="true">drag</div>
+<div class="drag2" draggable="true">drag2</div>
+<div class="target">目标元素</div>
+<script>
+    var drag=document.getElementsByClassName('drag')[0];
+    var drag2=document.getElementsByClassName('drag2')[0];
+    var target=document.getElementsByClassName('target')[0];
+
+    drag.addEventListener('dragstart',function (e) {
+        //传值
+        var dt=e.dataTransfer;
+        dt.setData('id',drag.className);
+        console.log("dragstart");
+    });
+    drag2.addEventListener('dragstart',function (e) {
+        //传值
+        var dt=e.dataTransfer;
+        dt.setData('id',drag2.className);
+        console.log("dragstart");
+    });
+    // drag.addEventListener('drag',function () {
+    //     console.log("drag");
+    // });
+    // drag.addEventListener('dragend',function () {
+    //     console.log("dragend");
+    // });
+
+    // target.addEventListener('dragenter',function () {
+    //     console.log("dragenter");
+    // });
+    target.addEventListener('dragover',function (e) {
+        //阻止触发
+        e.preventDefault();
+        // console.log("dragover");
+    });
+    //很少使用到
+    // target.addEventListener('dragleave',function () {
+    //     console.log("dragleave");
+    // });
+    //鼠标在目标元素抬起触发
+    //drop有个默认事件在dragover当中，要取消掉才能触发drop事件，否则会触发dragleave事件
+    //dom操作
+    target.addEventListener('drop',function (e) {
+        //取值
+        var dt=e.dataTransfer;
+        var text=dt.getData('id');
+        console.log(text);
+        //根据class查找dom元素,text不要加引号
+        this.appendChild(document.getElementsByClassName(text)[0]);
+    });
+</script>
+</body>
+</html>

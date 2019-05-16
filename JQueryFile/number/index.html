@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品数量加减2</title>
+    <style>
+        .wrapper{
+            width: 77px;
+            height: 25px;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+        .wrapper a{
+            position: absolute;
+            top: 0;
+            width: 17px;
+            height: 23px;
+            text-align: center;
+            line-height: 23px;
+            border: 1px solid #e5e5e5;
+            text-decoration: none;
+            background: #f0f0f0;
+            color: #444;
+        }
+        .wrapper .prev{
+            left: 0;
+        }
+        .wrapper .next{
+            right: 0;
+        }
+        .wrapper .text{
+            width: 39px;
+            height: 15px;
+            line-height: 15px;
+            border: 1px solid #aaa;
+            color: #343434;
+            text-align: center;
+            padding: 4px 0;
+            background-color: #fff;
+            background-position: -75px -375px;
+            position:absolute;
+            z-index:2;
+            left: 18px;
+            top:0;
+        }
+        .wrapper .min{
+            color:#e5e5e5;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <a href="javascript:;" class="prev">-</a>
+    <input type="text"value="1" class="text">
+    <a href="javascript:;" class="next">+</a>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    //实现功能
+    //规则:存值为1,用户拿到的值和我们运算的值不能是一样的
+    //使用find()可以使用end()回退事件
+    var value=1;
+    var max=20;
+    var min=1;
+    //当值大于等于20或者小于等于1的时候，把样式添加上
+    function notIn() {
+        if(value>=max){
+            $('.next').addClass('min');
+            //清除另一边类名，不然两边都是灰色的
+            $('.prev').removeClass('min');
+        }else if(value<=min){
+            $('.prev').addClass('min');
+            //清除另一边类名，不然两边都是灰色的
+            $('.next').removeClass('min');
+        }else {//其他情况下，谁有就清除掉这个class类名
+            $('.min').removeClass('min');
+        }
+    }
+    //一开始默认是灰色的
+    notIn();
+    //绑定input输入的值
+    $('input').on('click',function () {
+        count(0);
+        //样式不能少，小细节
+        notIn();
+    });
+
+    //因为加和减里面的代码差不多，所以精简一点
+    function count(num){
+        //这边必须从input框中取值,不能直接用value了,这边要用$(this).val()
+        //这边要使用取整，把字符串转成整数
+        value=parseInt($('.text').val())+num;
+        //判断值的边界而且不能是NaN
+        if(value<=min||isNaN(value)){
+            value=min;
+        }else if(value>=max){
+            value=max;
+        }
+        //把值赋给输入框
+        $('.text').val(value);
+    }
+
+    $('.prev').add('.next').click(function () {
+        //判断一下是不是有prev类
+        if($(this).hasClass('prev')){
+            count(-1);
+        }else{
+            count(+1);
+        }
+        notIn();
+    });
+</script>
+</body>
+</html>

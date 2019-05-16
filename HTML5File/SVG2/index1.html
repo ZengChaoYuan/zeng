@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <style>
+        svg{
+            border: 1px solid #000;
+        }
+        path{
+            stroke: #000;
+            stroke-width: 3px;
+            stroke-dasharray: 300px;
+            /*往里缩，感觉无限长一样*/
+            stroke-dashoffset: 15px;
+        }
+    </style>
+</head>
+<body>
+<!--SVG可以放在CSS中也可以放在标签中-->
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <path id="move" d="M 100 100 L 400 100"></path>
+</svg>
+<script>
+    var move=document.getElementById("move");
+    var stroke=0;
+    var timer=setInterval(function () {
+        stroke+=10;
+        if(stroke<300){
+            move.style.strokeDashoffset=stroke+'px';
+        }else{
+            clearInterval(timer);
+            move.style.strokeDashoffset='300px';
+        }
+    },100)
+</script>
+</body>
+</html>

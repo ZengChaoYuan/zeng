@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+/*导航部分*/
+#wrapper{
+    width: 100%;
+    height: 100%;
+    /*使得右边超出的部分隐藏*/
+    overflow: hidden;
+    position: relative;
+    background:#F1F1F1;
+}
+#side-nav{
+    width: 150px;
+    height: 100%;
+    background: #444;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+
+}
+/*页面内容部分*/
+#main{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+}
+
+#menu{
+    width:80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color:red;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+    outline: none;
+
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    color:white;
+    font-size: 16px;
+    background-color: rgba(68,68,68,1);
+    border: 0px;
+    outline: none;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#main.off-display{
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+}
+#side-nav.off-display{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+/*指定菜单*/
+.leftfirstmenu{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color:#333333;
+    border-bottom: 1px solid #cccccc;
+    border-left:0px solid white;
+    border-right:0px solid white;
+    border-top:0px solid white;
+    cursor: context-menu;
+}
+.menuyi{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color:#333333;
+    border-bottom: 1px solid #cccccc;
+    border-left:0px solid white;
+    border-right:0px solid white;
+    border-top:0px solid white;
+    cursor: context-menu;
+    outline: none;
+}
+.menuyi:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.lefttwomenu{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #cccccc;
+    border-left:0px solid white;
+    border-right:0px solid white;
+    border-top:0px solid white;
+}
+
+/*内容部分*/
+/*头部*/
+.header{
+    width: 100%;
+    height: 120px;
+    background-color:#333;
+}
+/*森力会员平台*/
+.hOne{
+    width: 20%;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+    font-size: 40px;
+    color: white;
+}
+/*退出登录*/
+.hTwoBtn{
+    background-color:#333;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border:0px;
+}
+
+.hThree{
+    width: 8%;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    float: right;
+}
+/*谁登录*/
+.hFour{
+    width: 8%;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    float:right;
+    font-size: 18px;
+    color: white;
+}
+.hFive{
+    width: 8%;
+    text-align: center;
+    margin-top: 10px;
+    height: 100px;
+    line-height: 120px;
+    float:right;
+    font-size: 18px;
+    color: white;
+
+}
+.pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-image: url(../image/q7.jpg);
+    background-size: cover;
+}
+
+.xinwen{
+    width:1000px;
+    height:500px;
+    margin:20px auto;
+}
+.xinwentop{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #009999;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 28px;
+    color: white;
+}
+.xinwenbot{
+    width: 100%;
+    height:450px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+.shijian{
+    text-indent: 40px;
+    font-size: 20px;
+    color: #333;
+}
+.gundong{
+    padding-top: 8px;
+    font-size: 20px;
+}
+.neirong{
+    padding-top: 14px;
+    text-indent: 40px;
+    font-size: 20px;
+    color: #333;
+}
+
+/*弹出图层*/
+.xiangqing:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+#popup.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+#popup-content{
+    /*使其浮动在其他元素上面*/
+    position: absolute;
+    z-index: 200;
+    width: 700px;
+    height: 450px;
+    box-sizing: border-box;
+    /*使元素居中显示*/
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -200px;
+    padding: 30px 50px;
+    background: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    font-size: 18px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    transform: translateY(100px);
+    -webkit-transform: translateY(0px);
+}
+#popup-content.show{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+#popup-content h1{
+    text-align: center;
+}
+#close{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background: #E74C3C;
+    color: #333333;
+    font-size: 21px;
+    border-radius: 4px;
+    border: 0;
+    text-align: center;
+    margin-left: 40%;
+}
+#close:hover{
+    background: #C0392B;
+    cursor: pointer;
+    color: white;
+}
+#popup-bg{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
